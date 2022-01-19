@@ -379,3 +379,19 @@ footer .social-media{
   margin-left: 75px;
   
 }
+
+#contactButton button:disabled {
+  background: #2a2b33;
+}
+
+#contactButton button:hover {
+  background: #7d73fc;
+}
+
+#contactButton button:enabled {
+  background: #7d73fc;
+}
+
+#contactButton button:active {
+  background: #5e42d7;
+}
