@@ -122,6 +122,7 @@ button {
 .social-media {
   display: inline-flex;
   margin-top: 20px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -368,9 +369,7 @@ form button {
 }
 footer {
   width: 375px;
-  min-height: max-content;
-  
-  margin-top: -12px;
+    margin-top: -12px;
 }
 
 footer .social-media{
