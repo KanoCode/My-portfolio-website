@@ -189,9 +189,10 @@
         <input
           required
           type="text"
-          placeholde="Your name"
+          placeholder="Your name"
           name="name"
           id="name"
+          maxlength="30"
         />
 
         <label for="mail"></label>
@@ -208,10 +209,13 @@
           name="message"
           id="message"
           placeholder="Enter text here"
-          cols="30"
-          rows="10"
+          maxlength="500"
+          
+
         ></textarea>
+        <div id="contactButton">
         <button type="submit">Submit</button>
+        </div>
       </form>
     </section>
     </main>
