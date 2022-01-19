@@ -49,11 +49,6 @@ body {
   color: #edecff;
 }
 
-button {
-  padding: 0;
-  border: none;
-}
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -253,18 +248,8 @@ hr {
   font-size: 20px;
 }
 
-form button {
-  width: 89px;
-  background-color: #7d73fc;
-  color: #edecff;
-  height: 48px;
-  margin: 40px auto;
-  padding: 10px;
-}
-
 button {
   border: none;
-  
   color: #edecff;
   position: relative;
   letter-spacing: 3%;
@@ -277,23 +262,31 @@ button {
   font-size: 12px;
 }
 
-button .disabled{
+form button {
+  width: 89px;
+  background-color: #7d73fc;
+  color: #edecff;
+  height: 48px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+button .disabled {
   background: #2a2b33;
 }
 
-button:hover{
+button:hover {
   background: #7d73fc;
   opacity: 0.8;
 }
+
 button:enabled {
   background: #7d73fc;
-} 
-
- button:active {
-  background: #5e42d7;
 }
 
-
+button:active {
+  background: #5e42d7;
+}
 
 .languages {
   display: flex;
