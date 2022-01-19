@@ -7,11 +7,16 @@
 
 html {
   overflow-x: hidden;
+  max-height: 100vh;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background: #191765;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: max-content;
 }
 
 #menu-mobile {
@@ -44,11 +49,6 @@ body {
   color: #edecff;
 }
 
-button {
-  padding: 0;
-  border: none;
-}
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@ button {
 
 .headline h1 {
   font-weight: 700;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   text-align: center;
   margin-top: 23px;
   margin-right: 2px;
@@ -80,6 +80,22 @@ button {
   padding: 2px;
   margin-left: 44px;
   margin-top: 18px;
+}
+
+p {
+  margin: 2%;
+  color: #f5f5ff;
+}
+
+footer p {
+  margin-top: -50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
 }
 
 .headline p {
@@ -117,6 +133,7 @@ button {
 .social-media {
   display: inline-flex;
   margin-top: 20px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -170,11 +187,10 @@ hr {
 .work {
   display: grid;
   grid-template-columns: 100vw;
-  height: 100vh;
 }
 
 .project-item {
-  margin: 14px 0 24px 0;
+  margin: 14px 0 24px;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -186,22 +202,22 @@ hr {
 }
 
 .work .one {
-  background-image: url(./assets/Ellipse\ 19@2x.svg);
+  background-image: url("./assets/Ellipse\ 19@2x.svg");
   background-position: left top;
 }
 
 .work .two {
-  background-image: url(./assets/Ellipse\ 20@2x.svg);
+  background-image: url("./assets/Ellipse\ 20@2x.svg");
   background-position: center right;
 }
 
 .work .three {
-  background-image: url(./assets/Ellipse\ 21@2x.svg);
+  background-image: url("./assets/Ellipse\ 21@2x.svg");
   background-position: left center;
 }
 
 .work .four {
-  background-image: url(./assets/Ellipse\ 22@2x.svg);
+  background-image: url("./assets/Ellipse\ 22@2x.svg");
   background-position: center right;
 }
 
@@ -232,9 +248,8 @@ hr {
   font-size: 20px;
 }
 
-.project-item button {
+button {
   border: none;
-  background: #7d73fc;
   color: #edecff;
   position: relative;
   letter-spacing: 3%;
@@ -242,23 +257,34 @@ hr {
   width: 89px;
   height: 48px;
   right: 30%;
+  cursor: pointer;
   font-weight: 400;
   font-size: 12px;
 }
 
-.project-item button:disabled {
+form button {
+  width: 89px;
+  background-color: #7d73fc;
+  color: #edecff;
+  height: 48px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+button .disabled {
   background: #2a2b33;
 }
 
-.project-item button:hover {
+button:hover {
+  background: #7d73fc;
+  opacity: 0.8;
+}
+
+button:enabled {
   background: #7d73fc;
 }
 
-.project-item button:enabled {
-  background: #7d73fc;
-}
-
-.project-item button:active {
+button:active {
   background: #5e42d7;
 }
 
@@ -302,4 +328,66 @@ h3 {
   align-self: center;
   align-items: center;
   justify-content: space-between;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 375px;
+  margin-top: 20%;
+  height: 700px;
+}
+
+.contact-form .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 92%;
+  height: 180px;
+  margin-left: 14px;
+  padding: 4px;
+  text-align: center;
+}
+
+.about-form h1 {
+  color: #9390ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 94%;
+  height: 360px;
+  margin-bottom: 10%;
+  margin-top: 10px;
+  margin-left: 12px;
+  text-align: center;
+}
+
+form input {
+  height: 50px;
+  margin: 12px;
+  padding: 15px 16px;
+}
+
+textarea {
+  margin: 12px;
+  min-height: 148px;
+  width: 327px;
+  padding: 15px 16px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 375px;
+  margin-top: -12px;
+}
+
+footer .social-media {
+  width: max-content;
+  margin-left: 75px;
 }
