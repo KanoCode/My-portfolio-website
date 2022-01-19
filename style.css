@@ -67,7 +67,7 @@ button {
 
 .headline h1 {
   font-weight: 700;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   text-align: center;
   margin-top: 23px;
   margin-right: 2px;
@@ -179,7 +179,7 @@ hr {
 }
 
 .project-item {
-  margin: 14px 0 24px 0;
+  margin: 14px 0 24px;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -308,13 +308,13 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 375px;
   margin-top: 20%;
-
   height: 700px;
 }
 
@@ -328,14 +328,16 @@ h3 {
   padding: 4px;
   text-align: center;
 }
+
 .about-form h1 {
   color: #9390ff;
 }
+
 p {
   margin: 2%;
   color: #f5f5ff;
-  
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -346,8 +348,8 @@ form {
   margin-top: 10px;
   margin-left: 12px;
   text-align: center;
-  
 }
+
 form input {
   height: 50px;
   margin: 12px;
@@ -358,6 +360,7 @@ textarea {
   height: 148px;
   width: 327px;
 }
+
 form button {
   width: 89px;
   margin-top: 70px;
@@ -367,16 +370,35 @@ form button {
   margin: 40px auto;
   padding: 10px;
 }
+
 footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   width: 375px;
-    margin-top: -12px;
+  margin-top: -12px;
 }
 
-footer .social-media{
-
+footer .social-media {
   width: max-content;
   margin-left: 75px;
-  
+}
+
+footer p {
+  margin-top: -50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+
+  /* or 140% */
+
+  text-align: center;
+
+  /* Primary/B50 */
+
+  color: #ebebff;
 }
 
 #contactButton button:disabled {
