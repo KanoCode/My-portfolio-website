@@ -7,6 +7,7 @@
 
 html {
   overflow-x: hidden;
+  max-height: 100vh;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-height: fit-content;
+  max-height: max-content;
 }
 
 #menu-mobile {
@@ -340,11 +341,11 @@ form {
   justify-content: space-evenly;
   width: 94%;
   height: 360px;
-  margin-bottom: 20%;
-
+  margin-bottom: 10%;
   margin-top: 10px;
   margin-left: 12px;
   text-align: center;
+  
 }
 form input {
   height: 50px;
@@ -367,6 +368,14 @@ form button {
 }
 footer {
   width: 375px;
-  height: 1060px;
-  background-color: yellow;
+  min-height: max-content;
+  
+  margin-top: -12px;
+}
+
+footer .social-media{
+
+  width: max-content;
+  margin-left: 75px;
+  
 }
