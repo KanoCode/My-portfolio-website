@@ -262,9 +262,9 @@ form button {
   padding: 10px;
 }
 
-.project-item button {
+button {
   border: none;
-  background: #7d73fc;
+  
   color: #edecff;
   position: relative;
   letter-spacing: 3%;
@@ -272,25 +272,28 @@ form button {
   width: 89px;
   height: 48px;
   right: 30%;
+  cursor: pointer;
   font-weight: 400;
   font-size: 12px;
 }
 
-.project-item button:disabled {
+button .disabled{
   background: #2a2b33;
 }
 
-.project-item button:hover {
+button:hover{
   background: #7d73fc;
+  opacity: 0.8;
 }
-
-.project-item button:enabled {
+button:enabled {
   background: #7d73fc;
-}
+} 
 
-.project-item button:active {
+ button:active {
   background: #5e42d7;
 }
+
+
 
 .languages {
   display: flex;
@@ -373,12 +376,14 @@ form {
 form input {
   height: 50px;
   margin: 12px;
+  padding: 15px 16px;
 }
 
 textarea {
   margin: 12px;
   min-height: 148px;
   width: 327px;
+  padding: 15px 16px;
 }
 
 footer {
@@ -392,20 +397,4 @@ footer {
 footer .social-media {
   width: max-content;
   margin-left: 75px;
-}
-
-#contactButton button:disabled {
-  background: #2a2b33;
-}
-
-#contactButton button:hover {
-  background: #7d73fc;
-}
-
-#contactButton button:enabled {
-  background: #7d73fc;
-}
-
-#contactButton button:active {
-  background: #5e42d7;
 }
