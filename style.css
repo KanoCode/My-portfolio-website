@@ -24,10 +24,10 @@ header {
   width: 100%;
 }
 
+
 #nav-desktop {
   display: none;
 }
-
 #menu-mobile {
   display: flex;
   justify-content: space-between;
@@ -678,79 +678,63 @@ footer .social-media {
     background-color: #3a3837;
     margin: auto;
   }
-  .sk-cube-grid {
-    width: 40px;
-    height: 40px;
-    margin: 10px auto;
-  }
-  
-  .sk-cube-grid .sk-cube {
-    width: 33%;
-    height: 33%;
-    background-color: #fff;
-    float: left;
-    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
-  }
-  .sk-cube-grid .sk-cube1 {
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s; }
-  .sk-cube-grid .sk-cube2 {
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .sk-cube-grid .sk-cube3 {
-    -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s; }
-  .sk-cube-grid .sk-cube4 {
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .sk-cube-grid .sk-cube5 {
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s; }
-  .sk-cube-grid .sk-cube6 {
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .sk-cube-grid .sk-cube7 {
-    -webkit-animation-delay: 0s;
-            animation-delay: 0s; }
-  .sk-cube-grid .sk-cube8 {
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .sk-cube-grid .sk-cube9 {
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s; }
-  
-  @-webkit-keyframes sk-cubeGridScaleDelay {
-    0%, 70%, 100% {
-      -webkit-transform: scale3D(1, 1, 1);
-              transform: scale3D(1, 1, 1);
-    } 35% {
-      -webkit-transform: scale3D(0, 0, 1);
-              transform: scale3D(0, 0, 1); 
-    }
-  }
-  
-  @keyframes sk-cubeGridScaleDelay {
-    0%, 70%, 100% {
-      -webkit-transform: scale3D(1, 1, 1);
-              transform: scale3D(1, 1, 1);
-    } 35% {
-      -webkit-transform: scale3D(0, 0, 1);
-              transform: scale3D(0, 0, 1);
-    } 
-  }
   
   .Circle-1 {
-    width: 100px;
+    width: 180px;
+    position:relative;
+    margin-left:-520px ;
     height: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    left: 400px;
+    top:220px;
+   box-shadow: 414px 0px 36px #fff;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   animation-name: moving-blur;
+   animation-iteration-count: infinite;
+   animation-direction: alternate; }
+
+  
+
+  .Circle-2 {    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:relative;
+    top: 570px;
+    left: 640px;
+   box-shadow: 414px 0px 36px #fff;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   animation-name: bouncy-blur;
+   animation-iteration-count: infinite;
+   animation-direction: alternate; 
   }
 
-  .Circle-2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #fff;
+  @keyframes moving-blur {
+from{
+  box-shadow: 414px 0px 56px #fff;
+
+}
+
+50% {
+  box-shadow: 414px 0px 66px #fff;
+}
+to{
+  box-shadow: 414px 0px 86px #fff;
+
+} 
+  }
+
+  @keyframes bouncy-blur {
+    0%{
+top:570px;
+    }
+    100%{
+top:370px;
+    }
+    
+  }
+  .welcome-section {
+    background: #191765;
   }
 }
