@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 #nav-desktop {
@@ -82,13 +82,13 @@ p {
 
 footer p {
   margin: -50px auto 6% 4%;
-   font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   margin-left: auto;
   color: #ebebff;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .headline p {
@@ -172,12 +172,11 @@ hr {
   display: flex;
   height: 80vh;
   flex-wrap: wrap;
-  
 }
 
 .box .titled-ld {
   color: #9490ff;
-  font-weight:500 ;
+  font-weight: 500;
 }
 
 .work {
@@ -220,7 +219,6 @@ hr {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
   align-items: center;
   margin-top: 14px;
   width: 375px;
@@ -251,7 +249,8 @@ hr {
   color: #dcdce8;
   font-size: 20px;
 }
-.description p{
+
+.description p {
   font-weight: 400;
   font-style: normal;
 }
@@ -402,10 +401,6 @@ textarea {
   width: 327px;
   padding: 15px 16px;
 }
-footer p{
-  font-weight: 400;
-  font-style: normal;
-}
 
 footer {
   display: flex;
@@ -418,7 +413,6 @@ footer {
 footer .social-media {
   width: 80%;
   margin-top: -4px;
-
   margin-left: 56px;
 }
 
@@ -466,11 +460,13 @@ footer .social-media {
     margin-bottom: 10px;
     color: #646369;
   }
-  #cards h3{
-font-weight: 500;
-font-style: normal;
-font-size: 40px;
-  width: 544px;
+
+  #cards h3 {
+    font-style: normal;
+    font-size: 40px;
+    width: 544px;
+    padding-top: 49px;
+    font-weight: 700;
   }
 
   .social-media {
@@ -573,19 +569,14 @@ font-size: 40px;
 
   .description h2 {
     width: 430px;
-    
     text-align: start;
   }
 
   .project-item h2 {
     font-weight: 400;
     padding-bottom: 50px;
-    font-size:  32px;
+    font-size: 32px;
     margin: -4px;
-  }
-  #cards h3{
-    padding-top: 49px;
-    font-weight: 700;
   }
 
   .languages {
@@ -631,11 +622,10 @@ font-size: 40px;
 
   .next-page-nav {
     display: flex;
-    margin-top: 23px;
     width: 1223px;
     align-items: baseline;
     height: 190px;
-  justify-content: space-between;
+    justify-content: space-between;
     margin: 23px auto 0 auto;
     flex-direction: row;
   }
