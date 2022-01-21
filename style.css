@@ -11,12 +11,11 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
   background: #191765;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-height: max-content;
+  font-family: Roboto,sans-serif;
 }
 
 #nav-desktop {
@@ -62,7 +61,7 @@ body {
   margin-right: 2px;
   width: 100%;
   color: #7d73fc;
-  font-size: 44px;
+  font-size: 48px;
 }
 
 .headline h2 {
@@ -83,12 +82,12 @@ p {
 
 footer p {
   margin: -50px auto 6% 4%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: normal;
+   font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+  margin-left: auto;
   color: #ebebff;
 }
 
@@ -97,6 +96,7 @@ footer p {
   margin-bottom: 10px;
   line-height: 40px;
   text-align: center;
+  font-weight: 400;
   padding: 2px;
   font-size: 20px;
 }
@@ -172,10 +172,12 @@ hr {
   display: flex;
   height: 80vh;
   flex-wrap: wrap;
+  
 }
 
 .box .titled-ld {
   color: #9490ff;
+  font-weight:500 ;
 }
 
 .work {
@@ -218,8 +220,10 @@ hr {
   display: flex;
   justify-content: center;
   flex-direction: column;
+
   align-items: center;
-  width: 450px;
+  margin-top: 14px;
+  width: 375px;
   height: 88%;
 }
 
@@ -230,8 +234,9 @@ hr {
 }
 
 .project-item h2 {
-  font-weight: 400;
+  font-weight: 500;
   padding: 20px;
+  font-style: normal;
   margin-left: -14px;
   font-size: 32px;
   color: #fff;
@@ -245,6 +250,10 @@ hr {
   text-align: start;
   color: #dcdce8;
   font-size: 20px;
+}
+.description p{
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {
@@ -296,6 +305,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   margin-top: -4%;
+  font-weight: 500;
   justify-content: space-evenly;
 }
 
@@ -392,19 +402,24 @@ textarea {
   width: 327px;
   padding: 15px 16px;
 }
+footer p{
+  font-weight: 400;
+  font-style: normal;
+}
 
 footer {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  width: 375px;
-  height: 56px;
-  margin-top: -12px;
+  width: 345px;
+  height: 356px;
+  margin-bottom: -16px;
 }
 
 footer .social-media {
-  width: max-content;
-  margin-left: 75px;
+  width: 80%;
+  margin-top: -4px;
+
+  margin-left: 56px;
 }
 
 @media (min-width: 992px) {
@@ -450,6 +465,12 @@ footer .social-media {
     margin-top: -84px;
     margin-bottom: 10px;
     color: #646369;
+  }
+  #cards h3{
+font-weight: 500;
+font-style: normal;
+font-size: 40px;
+  width: 544px;
   }
 
   .social-media {
@@ -518,7 +539,7 @@ footer .social-media {
   }
 
   footer .social-media {
-    margin: 4%;
+    margin: 2%;
   }
 
   .project-item {
@@ -552,13 +573,19 @@ footer .social-media {
 
   .description h2 {
     width: 430px;
+    
     text-align: start;
   }
 
   .project-item h2 {
     font-weight: 400;
     padding-bottom: 50px;
+    font-size:  32px;
     margin: -4px;
+  }
+  #cards h3{
+    padding-top: 49px;
+    font-weight: 700;
   }
 
   .languages {
@@ -605,6 +632,11 @@ footer .social-media {
   .next-page-nav {
     display: flex;
     margin-top: 23px;
+    width: 1223px;
+    align-items: baseline;
+    height: 190px;
+  justify-content: space-between;
+    margin: 23px auto 0 auto;
     flex-direction: row;
   }
 
