@@ -275,6 +275,7 @@ button {
   margin-right: 232px;
   font-weight: 400;
   font-size: 12px;
+  background-color: #5e42d7;
 }
 
 .email-icon {
@@ -296,8 +297,18 @@ button .disabled {
 }
 
 button:hover {
-  background: #7d73fc;
+  background: #9e9bc0;
   opacity: 0.8;
+  border: none;
+  color: #edecff;
+  letter-spacing: 3%;
+  width: 100px;
+  height: 48px;
+  cursor: pointer;
+  margin-top: 4%;
+  margin-right: 232px;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 button:enabled {
@@ -306,6 +317,15 @@ button:enabled {
 
 button:active {
   background: #5e42d7;
+}
+
+form button:hover {
+  width: 109px;
+  background-color: #7d73fc;
+  color: #edecff;
+  height: 48px;
+  margin: 40px auto;
+  padding: 10px;
 }
 
 .next-page-nav {
@@ -499,8 +519,8 @@ footer .social-media {
   .welcome-section {
     display: flex;
     margin-top: 45px;
-    background: url("./assets/two\ circles\ header.svg") no-repeat 4% 4%;
     flex-direction: column;
+    background: #191765;
   }
 
   .skills-container {
@@ -562,6 +582,23 @@ footer .social-media {
     height: 100px;
     align-items: flex-end;
     margin-left: 25%;
+  }
+
+  .nav-items span {
+    display: block;
+    width: 14%;
+    margin-top: 6%;
+    height: 4px;
+    border-radius: 10%;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    background-color: #9490ff;
+    transition-property: width;
+    transition-duration: 1s;
+  }
+
+  .nav-items span:hover {
+    width: 100%;
   }
 
   footer .social-media {
@@ -677,5 +714,60 @@ footer .social-media {
     width: 1440px;
     background-color: #3a3837;
     margin: auto;
+  }
+
+  .Circle-1 {
+    width: 180px;
+    position: relative;
+    margin-left: -520px;
+    height: 100px;
+    border-radius: 50%;
+    left: 400px;
+    top: 220px;
+    box-shadow: 414px 0 36px #fff;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: moving-blur;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .Circle-2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 570px;
+    left: 640px;
+    box-shadow: 414px 0 36px #fff;
+    animation-duration: 3.3s;
+    animation-timing-function: ease-in-out;
+    animation-name: bouncy-blur;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes moving-blur {
+    from {
+      box-shadow: 414px 0 56px #fff;
+    }
+
+    50% {
+      box-shadow: 414px 0 66px #fff;
+    }
+
+    to {
+      box-shadow: 414px 0 86px #fff;
+    }
+  }
+
+  @keyframes bouncy-blur {
+    0% {
+      top: 570px;
+    }
+
+    100% {
+      top: 370px;
+    }
   }
 }
