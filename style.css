@@ -520,6 +520,7 @@ footer .social-media {
     display: flex;
     margin-top: 45px;
     flex-direction: column;
+    background: #191765;
   }
 
   .skills-container {
