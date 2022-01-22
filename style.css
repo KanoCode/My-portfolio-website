@@ -297,8 +297,18 @@ button .disabled {
 }
 
 button:hover {
-  background: #7d73fc;
+  background: #9e9bc0;
   opacity: 0.8;
+  border: none;
+  color: #edecff;
+  letter-spacing: 3%;
+  width: 100px;
+  height: 48px;
+  cursor: pointer;
+  margin-top: 4%;
+  margin-right: 232px;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 button:enabled {
@@ -307,6 +317,15 @@ button:enabled {
 
 button:active {
   background: #5e42d7;
+}
+
+form button:hover {
+  width: 109px;
+  background-color: #7d73fc;
+  color: #edecff;
+  height: 48px;
+  margin: 40px auto;
+  padding: 10px;
 }
 
 .next-page-nav {
