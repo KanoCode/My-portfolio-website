@@ -23,6 +23,9 @@ header {
   position: fixed;
   width: 100%;
 }
+header .nav-items{
+  border: blueviolet solid;
+}
 
 #nav-desktop {
   display: none;
@@ -114,13 +117,20 @@ footer p {
 
 .fa {
   font-size: 30px;
+  
+  font-weight: 400;
+}
+.menu-btn{
+  cursor: pointer;
+}
+
+
+.menu-btn .fas{
+  font-size: 30px;
   color: #edecff;
 }
 
-.fa .fa-bars {
-  font-weight: 400;
-  color: #acb7c3;
-}
+
 
 .welcome-section {
   margin-top: 45px;
