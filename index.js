@@ -1,7 +1,6 @@
 const menuBtnIcon = document.querySelector('i');
 const menuBtnClass = menuBtnIcon.classList[1];
 const mobileNav = document.querySelector('.navMenu');
-const menuBtn = document.querySelector('.menuBtn');
 
 function switchIcons() {
     if (menuBtnClass == 'fa-bars') {

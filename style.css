@@ -23,10 +23,19 @@ header {
   position: fixed;
   width: 100%;
 }
-#menu-mobile .active .nav-items {
-  position: relative;
-  top:18px;
 
+#menu-mobile .nav-items {
+  display: none;
+  z-index: 41;
+}
+
+#menu-mobile .active .nav-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  position: relative;
+  top: 18px;
+  height: 50%;
 }
 
 #nav-desktop {
@@ -61,40 +70,55 @@ header {
   padding-right: 60px;
   width: 94%;
 }
+
 #menu-mobile .active {
   margin-right: 5%;
   width: 100%;
   position: absolute;
   top: 2%;
-  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom, url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top  ;
+  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom, url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
   height: 100vh;
   background-color: #191765;
 }
-a{
+
+a {
   color: #ebebff;
   font-weight: 400;
 }
 
-#menu-mobile .nav-items {
-  display: none;
-  z-index: 41;
+.menuBtn .fas {
+  font-size: 30px;
+  cursor: pointer;
+  color: #edecff;
 }
-#menu-mobile .active .nav-items {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  height: 50%;
-}
-
 
 #menu-mobile .active .fas {
   display: block;
   float: right;
   margin-right: 3%;
 }
-#menu-mobile .active li .fas{
+
+#menu-mobile .active li .fas {
   color: #acb7c3;
   font-size: 18px;
+}
+
+.social-media li {
+  list-style-type: none;
+}
+
+.box li {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 40px;
+  font-weight: 400;
+  color: #f5f5ff;
+}
+
+.languages li {
+  border-right: #555 solid 2px;
+  padding: 6px 20px;
+  margin-right: 2px;
 }
 
 #menu-mobile .active .nav-items li {
@@ -103,7 +127,7 @@ a{
   justify-content: space-between;
   color: #edecff;
   font-size: 24px;
-  margin:2px 12px;
+  margin: 2px 12px;
   width: 90%;
 }
 
@@ -164,27 +188,22 @@ footer p {
 
 .fa {
   font-size: 30px;
-
   font-weight: 400;
 }
-.menuBtn{
+
+.menuBtn {
   width: fit-content;
   position: fixed;
   left: 90%;
-  top:2%;
+  top: 2%;
   height: 5%;
-}
-
-.menuBtn .fas {
-  font-size: 30px;
-  cursor: pointer;
-  color: #edecff;
 }
 
 .welcome-section {
   margin-top: 45px;
   width: 100%;
-  background: url(./assets/Ellipse-18.svg) top left no-repeat,
+  background:
+    url(./assets/Ellipse-18.svg) top left no-repeat,
     url(./assets/Ellipse-19.svg) right center no-repeat;
 }
 
@@ -216,20 +235,8 @@ hr {
   margin: 10px;
 }
 
-.social-media li {
-  list-style-type: none;
-}
-
 .box {
   width: 50%;
-}
-
-.box li {
-  list-style-type: none;
-  padding: 10px;
-  margin-left: 40px;
-  font-weight: 400;
-  color: #f5f5ff;
 }
 
 .skills-container {
@@ -420,12 +427,6 @@ h3 {
   margin-bottom: 24px;
 }
 
-.languages li {
-  border-right: #555 solid 2px;
-  padding: 6px 20px;
-  margin-right: 2px;
-}
-
 .next-page {
   display: flex;
   width: 81px;
@@ -477,8 +478,6 @@ form {
   margin-left: 12px;
   text-align: center;
 }
-
-
 
 form input {
   height: 50px;
