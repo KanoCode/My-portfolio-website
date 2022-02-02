@@ -14,7 +14,6 @@ function switchIcons() {
   mobileNav.addEventListener("click", ()=>{
   switchIcons();
   if(mobileNav.classList.contains("active")){
-console.log(mobileNav.classList.contains("active"))
 mobileNav.classList.remove("active")
   }else{
     mobileNav.classList.add("active");
