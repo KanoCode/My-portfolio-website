@@ -24,9 +24,18 @@
     <header >
       <div id="menu-mobile">
         <a href="#" id="logo">John Doe</a>
-        <nav class="menu-btn active">
-          <i class="fas fa-bars"></i>
+        <nav class="navMenu">
+        <div class="menuBtn">  <i class="fas fa-bars"></i></div>
+          <ul class="nav-items">
+
+            <li><a href="#cards">Portfolio <span class="nav-deco"></span></a href="#portfolio"> <i class="fas fa-angle-right"></i></li>
+            <li><a href="#about">About</a><span></span><i class="fas fa-angle-right"></i></li>
+            <li><a href="#contact">Contact </a><span></span><i class="fas fa-angle-right"></i></li>
+           
+           
+          </ul>
         </nav>
+        
         
       </div>
      
@@ -47,7 +56,7 @@
      
     </header>
     <main>
-      <section class="welcome-section">
+      <section id="about" class="welcome-section">
         <div class="Circle-1"></div>
         <div class="Circle-2"> </div>
         <div class="headline">
@@ -231,7 +240,7 @@
       </div>
         
       </section>
-      <section class="contact-form">
+      <section id="contact" class="contact-form">
         <div class="description">
           <h2>Let's Chat</h2>
           <p>
@@ -240,7 +249,7 @@
             to help with it
           </p>
         </div>
-        <form class="contact-me" action="https://formspree.io/f/mzbodazz" method="post">
+        <form class="contact-me"  action="https://formspree.io/f/mzbodazz" method="post">
           <label for="name"></label>
           <input
             required
