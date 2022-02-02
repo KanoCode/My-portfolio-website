@@ -284,12 +284,7 @@ hr {
 #cards {
   margin-top: 90px;
 }
-.card-container{
-  border:palevioletred solid 2px;
-}
-#cards .active{
-  background-color: plum;
-}
+
 #cards .active .project-item {
   position: fixed;
   top:0;
@@ -430,6 +425,12 @@ form button {
 button .disabled {
   background: #2a2b33;
 }
+.description .fas {
+  display: none;
+  }
+  .active .description .fas {
+    display: block;
+  }
 
 button:hover {
   background: #9e9bc0;
@@ -606,6 +607,12 @@ right:154px;
   position: fixed;
   top: 0;
   left: 213px;
+}
+.description .fas {
+display: none;
+}
+.active .description .fas {
+  display: block;
 }
 .active .project-description .languages{
   width: 88%;
