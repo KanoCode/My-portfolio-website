@@ -1,21 +1,19 @@
-let menuBtnIcon = document.querySelector("i");
-let menuBtnClass = menuBtnIcon.classList[1];
-let mobileNav = document.querySelector(".navMenu");
-let menuBtn = document.querySelector('.menuBtn');
-
+const menuBtnIcon = document.querySelector('i');
+const menuBtnClass = menuBtnIcon.classList[1];
+const mobileNav = document.querySelector('.navMenu');
+const menuBtn = document.querySelector('.menuBtn');
 
 function switchIcons() {
-    if (menuBtnClass == "fa-bars") {
-    menuBtnIcon.classList.toggle("fa-times");
+    if (menuBtnClass == 'fa-bars') {
+    menuBtnIcon.classList.toggle('fa-times');
   } 
   }
 
-
-  mobileNav.addEventListener("click", ()=>{
+mobileNav.addEventListener('click', ()=>{
   switchIcons();
-  if(mobileNav.classList.contains("active")){
-mobileNav.classList.remove("active")
+  if(mobileNav.classList.contains('active')){
+    mobileNav.classList.remove('active');
   }else{
-    mobileNav.classList.add("active");
+    mobileNav.classList.add('active');
   } 
 })
