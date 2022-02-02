@@ -24,6 +24,20 @@ header {
   width: 100%;
 }
 
+#menu-mobile .nav-items {
+  display: none;
+  z-index: 41;
+}
+
+#menu-mobile .active .nav-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  position: relative;
+  top: 18px;
+  height: 50%;
+}
+
 #nav-desktop {
   display: none;
 }
@@ -55,6 +69,66 @@ header {
   margin: 25% auto 4% auto;
   padding-right: 60px;
   width: 94%;
+}
+
+#menu-mobile .active {
+  margin-right: 5%;
+  width: 100%;
+  position: absolute;
+  top: 2%;
+  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom, url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
+  height: 100vh;
+  background-color: #191765;
+}
+
+a {
+  color: #ebebff;
+  font-weight: 400;
+}
+
+.menuBtn .fas {
+  font-size: 30px;
+  cursor: pointer;
+  color: #edecff;
+}
+
+#menu-mobile .active .fas {
+  display: block;
+  float: right;
+  margin-right: 3%;
+}
+
+#menu-mobile .active li .fas {
+  color: #acb7c3;
+  font-size: 18px;
+}
+
+.social-media li {
+  list-style-type: none;
+}
+
+.box li {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 40px;
+  font-weight: 400;
+  color: #f5f5ff;
+}
+
+.languages li {
+  border-right: #555 solid 2px;
+  padding: 6px 20px;
+  margin-right: 2px;
+}
+
+#menu-mobile .active .nav-items li {
+  padding: 6%;
+  display: inline-flex;
+  justify-content: space-between;
+  color: #edecff;
+  font-size: 24px;
+  margin: 2px 12px;
+  width: 90%;
 }
 
 .headline h1,
@@ -114,18 +188,23 @@ footer p {
 
 .fa {
   font-size: 30px;
-  color: #edecff;
+  font-weight: 400;
 }
 
-.fa .fa-bars {
-  font-weight: 400;
-  color: #acb7c3;
+.menuBtn {
+  width: fit-content;
+  position: fixed;
+  left: 90%;
+  top: 2%;
+  height: 5%;
 }
 
 .welcome-section {
   margin-top: 45px;
   width: 100%;
-  background: url(./assets/Ellipse-18.svg) top left no-repeat, url(./assets/Ellipse-19.svg) right center no-repeat;
+  background:
+    url(./assets/Ellipse-18.svg) top left no-repeat,
+    url(./assets/Ellipse-19.svg) right center no-repeat;
 }
 
 .social-media {
@@ -137,7 +216,7 @@ footer p {
 
 .social-media img {
   height: 30px;
-  margin: 10px;
+  margin: 3px;
   width: 20px;
 }
 
@@ -156,20 +235,8 @@ hr {
   margin: 10px;
 }
 
-.social-media li {
-  list-style-type: none;
-}
-
 .box {
   width: 50%;
-}
-
-.box li {
-  list-style-type: none;
-  padding: 10px;
-  margin-left: 40px;
-  font-weight: 400;
-  color: #f5f5ff;
 }
 
 .skills-container {
@@ -360,12 +427,6 @@ h3 {
   margin-bottom: 24px;
 }
 
-.languages li {
-  border-right: #555 solid 2px;
-  padding: 6px 20px;
-  margin-right: 2px;
-}
-
 .next-page {
   display: flex;
   width: 81px;
@@ -416,10 +477,6 @@ form {
   margin-top: 30px;
   margin-left: 12px;
   text-align: center;
-}
-
-.menu-btn {
-  margin-right: 6%;
 }
 
 form input {
