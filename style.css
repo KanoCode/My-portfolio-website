@@ -23,8 +23,10 @@ header {
   position: fixed;
   width: 100%;
 }
-header .nav-items{
-  border: blueviolet solid;
+#menu-mobile .active .nav-items {
+  position: relative;
+  top:18px;
+
 }
 
 #nav-desktop {
@@ -58,6 +60,51 @@ header .nav-items{
   margin: 25% auto 4% auto;
   padding-right: 60px;
   width: 94%;
+}
+#menu-mobile .active {
+  margin-right: 5%;
+  width: 100%;
+  position: absolute;
+  top: 2%;
+  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom, url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top  ;
+  height: 100vh;
+  background-color: #191765;
+}
+a{
+  color: #ebebff;
+  font-weight: 400;
+}
+
+#menu-mobile .nav-items {
+  display: none;
+  z-index: 41;
+}
+#menu-mobile .active .nav-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 50%;
+}
+
+
+#menu-mobile .active .fas {
+  display: block;
+  float: right;
+  margin-right: 3%;
+}
+#menu-mobile .active li .fas{
+  color: #acb7c3;
+  font-size: 18px;
+}
+
+#menu-mobile .active .nav-items li {
+  padding: 6%;
+  display: inline-flex;
+  justify-content: space-between;
+  color: #edecff;
+  font-size: 24px;
+  margin:2px 12px;
+  width: 90%;
 }
 
 .headline h1,
@@ -117,25 +164,28 @@ footer p {
 
 .fa {
   font-size: 30px;
-  
+
   font-weight: 400;
 }
-.menu-btn{
-  cursor: pointer;
+.menuBtn{
+  width: fit-content;
+  position: fixed;
+  left: 90%;
+  top:2%;
+  height: 5%;
 }
 
-
-.menu-btn .fas{
+.menuBtn .fas {
   font-size: 30px;
+  cursor: pointer;
   color: #edecff;
 }
-
-
 
 .welcome-section {
   margin-top: 45px;
   width: 100%;
-  background: url(./assets/Ellipse-18.svg) top left no-repeat, url(./assets/Ellipse-19.svg) right center no-repeat;
+  background: url(./assets/Ellipse-18.svg) top left no-repeat,
+    url(./assets/Ellipse-19.svg) right center no-repeat;
 }
 
 .social-media {
@@ -428,9 +478,7 @@ form {
   text-align: center;
 }
 
-.menu-btn {
-  margin-right: 6%;
-}
+
 
 form input {
   height: 50px;
