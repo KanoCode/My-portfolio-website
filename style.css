@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -256,11 +256,12 @@ hr {
 }
 
 .project-item {
-  margin: 30px 0 24px;
+  margin: 64px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100vw;
+  border: aqua solid 2px;
+  width: 60vw;
   align-items: center;
   align-content: space-around;
 }
@@ -287,54 +288,59 @@ hr {
 
 #cards .active .project-item {
   position: fixed;
-  top:0;
+  top: 0;
   left: 3.6%;
-  background:#373665;
-
+  background: #373665;
   width: 92%;
- 
-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
 }
-#cards .active .project-item .seeProject{
+
+#cards .active .project-item .seeProject {
   display: none;
 }
-.btn-container  button{
+
+.btn-container button {
   width: 49%;
-font-size: 24px;
-    margin: 10px 16%;
-}
-.btn-container .liveBtn{
-  width: 48%;
- margin: auto;
-}
-.btn-container .liveSourceBtn{
-  width: 64%;
- margin: auto;
+  font-size: 24px;
+  margin: 10px 16%;
 }
 
-.project-description .description .fas{
+.btn-container .liveBtn {
+  width: 48%;
+  margin: auto;
+}
+
+.btn-container .liveSourceBtn {
+  width: 64%;
+  margin: auto;
+}
+
+.project-description .description .fas {
   position: fixed;
   top: 6px;
   left: 85%;
 }
-.btn-container{
+
+.btn-container {
   display: none;
 }
 
-.active .btn-container{
+.active .btn-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  justify-content: space-between;
   width: 65%;
   height: 18%;
   padding: 2%;
 }
-.btn-container span{
-font-size: 16.44px;
-margin: auto;
+
+.btn-container span {
+  font-size: 16.44px;
+  margin: auto;
 }
+
 .active .project-description {
   display: flex;
   justify-content: space-around;
@@ -342,22 +348,24 @@ margin: auto;
   text-align: center;
   margin-top: -2px;
   padding: 0 2%;
-} 
-.active .project-description h2{
-  position:absolute;
-  top:0;
 }
-.active .project-img{
+
+.active .project-description h2 {
+  position: absolute;
+  top: 0;
+}
+
+.active .project-img {
   margin-top: 65px;
 }
 
 .project-description {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: 14px;
-  width: 100%;
+  border: solid aqua 2px;
+  width: 60%;
 }
 
 .project-img {
@@ -369,6 +377,8 @@ margin: auto;
 .project-item h2 {
   font-weight: 500;
   padding: 20px;
+  margin-left: -15px;
+  text-align: start;
   font-style: normal;
   font-size: 32px;
   color: #fff;
@@ -428,12 +438,14 @@ form button {
 button .disabled {
   background: #2a2b33;
 }
+
 .description .fas {
   display: none;
-  }
-  .active .description .fas {
-    display: block;
-  }
+}
+
+.active .description .fas {
+  display: block;
+}
 
 button:hover {
   background: #9e9bc0;
@@ -590,51 +602,67 @@ footer .social-media {
     width: 668px;
     height: 80vh;
   }
-.active .project-item{
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.active .project-img{
-  width: 84%;
-  height:647px ;
-
+  .active .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .active .description{
-width: 700px;
-position: relative;
-right:154px;
-}
-.active .description h2{
-  position: fixed;
-  top: 0;
-  left: 213px;
-}
-.description .fas {
-display: none;
-}
-.active .description .fas {
-  display: block;
-}
-.active .project-description .languages{
-  width: 88%;
-  margin-top: -82px;
-}
 
-.btn-container{
-  flex-direction: row;
-  margin-top: -60px;
-  margin-bottom: 58px;
-  width: 48%;
-}
-.btn-container .liveBtn{
-  margin: 50px;
-}
-.btn-container .liveSourceBtn{
-  margin: 50px;
-}
+  .active .project-img {
+    width: 84%;
+    height: 647px;
+  }
 
+  .active .description {
+    width: 700px;
+    position: relative;
+    right: 154px;
+  }
+
+  #cards {
+    /* border: #9390ff solid; */
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    /* margin: 20px; */
+    width: 100vw;
+  }
+
+  .active .description h2 {
+    position: fixed;
+    top: 0;
+    left: 213px;
+  }
+
+  .description .fas {
+    display: none;
+  }
+
+  .active .description .fas {
+    display: block;
+  }
+
+  .active .project-description .languages {
+    width: 88%;
+    margin-top: -82px;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    margin-top: -60px;
+    margin-bottom: 58px;
+    width: 48%;
+  }
+
+  .btn-container .liveBtn {
+    margin: 50px;
+  }
+
+  .btn-container .liveSourceBtn {
+    margin: 50px;
+  }
 
   .logo {
     display: flex;
@@ -664,6 +692,11 @@ display: none;
     color: #646369;
   }
 
+  .project-item {
+    /* border: #dcdce8 solid 2px; */
+    width: 10px;
+  }
+
   #cards hr {
     margin-left: 148px;
     margin-right: 128px;
@@ -675,7 +708,7 @@ display: none;
     color: #f5f5ff;
   }
 
-  #cards h3 {
+  #about h3 {
     font-style: normal;
     font-size: 40px;
     width: 544px;
@@ -780,12 +813,11 @@ display: none;
   }
 
   .project-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80vw;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    width: 96%;
     height: 500px;
-    margin-left: 10%;
+    margin: 0 14px;
   }
 
   .reverse-item {

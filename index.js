@@ -16,3 +16,17 @@ mobileNav.addEventListener('click', ()=>{
     mobileNav.classList.add('active');
   } 
 })
+
+/*Projects Section*/
+const projectSection = document.createElement('section');
+const aboutSection = document.querySelector("#about")
+
+projectSection.id = "cards";
+
+console.log(projectSection.textContent)
+
+
+aboutSection.insertAdjacentHTML('afterend',`<h2>${projectSection.textContent}</h2>`);
+// aboutSection.insertAdjacentHTML('afterend','<h3>I am an H3</h3>')
+
+
