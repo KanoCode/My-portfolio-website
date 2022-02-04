@@ -199,7 +199,18 @@ footer p {
   top: 2%;
   height: 5%;
 }
-
+#errorMessage {
+  color: #dc1515cf;
+  background-color: #ffffff40;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 12px;
+  margin: 5px;
+  width: 96%;
+}
+form i{
+  color:yellow;
+}
 .welcome-section {
   margin-top: 45px;
   width: 100%;
