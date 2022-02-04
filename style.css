@@ -44,9 +44,10 @@ top: 0;
   top:0;
   right: 6px;
   cursor: pointer;
-  /* border: solid; */
+  display: none;
   color: #acb7c3;
   font-size: 28px;
+  z-index: 100;
 }
 .active-card{
   display: none;
@@ -414,6 +415,7 @@ hr {
  flex-direction: column;
  justify-content: space-evenly;
  grid-template-columns: auto;
+ z-index: 0;
 }
 
 
@@ -717,10 +719,16 @@ footer .social-media {
   .description-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10px;
     flex-direction: row;
-    margin: auto 10%;
-    width: 100%;
+    margin: 0 auto;
+    width: 85%;
   }
+
+  .description-container p {
+    margin: 0;
+  }
+
   .headline h2 {
     text-align: center;
     margin-top: -48px;
@@ -765,6 +773,13 @@ footer .social-media {
     margin-top: 45px;
     flex-direction: column;
     background: #191765;
+  }
+
+  .details > button {
+    margin: 0;
+    padding: 0;
+    align-self: self-end;
+    margin-top: 31px;
   }
 
   .skills-container {
@@ -861,9 +876,8 @@ footer .social-media {
   }
 
   .project-img {
-    width: auto;
-    height: auto;
-    margin: auto 12px;
+    width: 684px;
+    height: 448px;
     background-color: #fff;
   }
 
@@ -879,17 +893,25 @@ footer .social-media {
 
   .project-item h2 {
     font-weight: 400;
-    padding-bottom: 50px;
     font-size: 32px;
-    margin-top: 58px;
-    align-self: flex-start;
-    margin-left: 250px;
+    margin: 0;
+    height: 105px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .details {
+    flex-direction: column;
+    width: 448px;
+    display: flex;
+    padding-top: 69px;
+    gap: 20px;
   }
 
   .languages {
-    margin-left: -64px;
+    margin: 0;
     font-size: 15px;
-    /* width: 77%; */
   }
 
   #nav-desktop {
