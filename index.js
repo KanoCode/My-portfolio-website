@@ -17,20 +17,15 @@ mobileNav.addEventListener("click", () => {
   }
 });
 
-// form validation
-// const submitBtn = document.getElementById("submitBtn");
-const form = document.querySelector("form");
-form.addEventListener("submit", validator);
+//form validation
 
+const submitBtn = document.getElementById("submitBtn");
+const errorMessage = document.getElementById("errorMessage");
 function validator(e) {
-  const errorMessg = document.getAnimations("error");
   const formValue = document.getElementById("email").value;
-  if (formValue === formValue.toLowerCase()) {
-  } else {
+  if ((formValue == formValue.toLowerCase()) == false) {
     e.preventDefault();
-    console.log("not the correct format", errorMessg);
-    errorMessg.innerHTML +=
-      '<i class="fas fa-exclamation-triangle"></i> *please insert email in the correct format and do not include uppercase letters *';
+    errorMessage.innerHTML = `<i class="fas fa-exclamation-triangle"></i><strong>Invalid email !!</strong> Insert a valid email and try again`;
   }
 }
 
