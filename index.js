@@ -37,7 +37,6 @@ const cardsObjectsArr = [
   },
 ];
 
-
 const descriptionContainer = document.querySelector(".description-container");
 
 function makeListItems(arr) {
@@ -91,11 +90,13 @@ const header = document.querySelector("header");
 
 const cardsBtn = document.querySelector(".seeProject");
 
+//close popup
 const closeBtn = document.querySelector(".toggle-active");
 closeBtn.addEventListener("click", () => {
   projectItem.classList.remove("active");
   header.classList.remove("active-card");
-  closeBtn.style.display = 'none';
+  closeBtn.style.display = "none";
+  createContent(cardsObjectsArr[0]);
 });
 
 //toggle active cardsOff
@@ -103,30 +104,32 @@ closeBtn.addEventListener("click", () => {
 function focusProject() {
   projectItem.classList.add("active");
   createContentPopUp(cardsObjectsArr[0]);
-  cardsBtn.style.display = "none";
-  closeBtn.style.display = 'block';
-  header.classList.add("active-card");
+  cardsBtn.classList.remove("active");
+  closeBtn.style.display = "block";
 }
 
-function createContentPopUp({
-  postTitle,
-  description,
-  reverse,
-  popupImageUrlMobile,
-  popupImageUrlDesktop,
-  technologiesPopup,
-  languages,
-  linkLive,
-  linkSource,
-  position,
-}) {
-  let dynamicList = [];
-  if (Array.isArray(technologiesPopup)) {
-    dynamicList = makeListItems(technologiesPopup);
-  }
+function createContentPopUp(
+  {
+    postTitle,
+    description,
+    reverse,
+    popupImageUrlMobile,
+    popupImageUrlDesktop,
+    technologiesPopup,
+    languages,
+    linkLive,
+    linkSource,
+    position,
+  },
+  isDesktop
+) {
+  let dynamicList = makeListItems(technologiesPopup);
+  isDesktop = window.matchMedia("(min-width: 992px)").matches;
 
   const cardContent = `
-  <div class="project-img"><img src= '${popupImageUrlMobile}'></div>
+  <div class="project-img"><img src= '${
+    isDesktop ? popupImageUrlDesktop : popupImageUrlMobile
+  }'></div>
   <h2>${postTitle}</h2>
   <p>
   ${description}
@@ -152,4 +155,3 @@ function createContentPopUp({
   descriptionContainer.innerHTML = cardContent;
   return descriptionContainer.innerHTML;
 }
-

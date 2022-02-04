@@ -902,11 +902,9 @@ footer .social-media {
   }
 
   .details {
-    flex-direction: column;
-    width: 448px;
-    display: flex;
-    padding-top: 69px;
-    gap: 20px;
+    
+    padding-top: 60px;
+      margin-top: 66px;
   }
 
   .languages {
