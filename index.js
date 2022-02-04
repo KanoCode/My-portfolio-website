@@ -63,18 +63,19 @@ function createContent({
 
   const cardContent = `
   <div class="project-img"></div>
+  <div>
   <h2>${postTitle}</h2>
   <p>
   ${description}
   </p>
-  
+  <div class="details" style="background-color: red;">
   <ul class="languages">
   ${dynamicList[0]}
   ${dynamicList[1]}
   ${dynamicList[2]}
   ${dynamicList[3]}
   </ul>
-  <button class="seeProject" onclick='focusProject()' type="button">See Project</button>`;
+  <button class="seeProject" onclick='focusProject()' type="button">See Project</button></div>`;
 
   descriptionContainer.innerHTML = cardContent;
   return descriptionContainer.innerHTML;
@@ -85,7 +86,6 @@ const dynamicCard = createContent(cardsObjectsArr[0]);
 //toggle active cardsOn
 const projectItem = document.querySelector(".project-item");
 
-projectItem.insertAdjacentHTML("beforeend", dynamicCard);
 const header = document.querySelector("header");
 //default cardsBtn
 
@@ -95,8 +95,7 @@ const closeBtn = document.querySelector(".toggle-active");
 closeBtn.addEventListener("click", () => {
   projectItem.classList.remove("active");
   header.classList.remove("active-card");
-  cardsBtn.style.left = '1000px';
-  console.log("do you want to do this?");
+  closeBtn.style.display = 'none';
 });
 
 //toggle active cardsOff
@@ -105,6 +104,7 @@ function focusProject() {
   projectItem.classList.add("active");
   createContentPopUp(cardsObjectsArr[0]);
   cardsBtn.style.display = "none";
+  closeBtn.style.display = 'block';
   header.classList.add("active-card");
 }
 
