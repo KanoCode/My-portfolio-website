@@ -25,7 +25,7 @@ function validator(e) {
   const formValue = document.getElementById("email").value;
   if ((formValue == formValue.toLowerCase()) == false) {
     e.preventDefault();
-    errorMessage.innerHTML = `<i class="fas fa-exclamation-triangle"></i><strong>Invalid email !!</strong> Insert a valid email and try again`;
+    errorMessage.innerHTML = `<i class="fas fa-exclamation-triangle"></i><strong>Invalid email !!</strong> Please insert an email without uppercase letters and try again`;
   }
 }
 
