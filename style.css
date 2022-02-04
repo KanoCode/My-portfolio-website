@@ -28,7 +28,33 @@ header {
   display: none;
   z-index: 41;
 }
+#cards .active{
+position: fixed;
+top: 0;
+  width: 86vw;
+  left: 6%;
+  margin: 0 auto;
+  background-color:#383867;
 
+}
+
+#cards .fas {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 6px;
+  cursor: pointer;
+  /* border: solid; */
+  color: #acb7c3;
+  font-size: 28px;
+}
+.active-card{
+  display: none;
+}
+#cards .fas{ 
+  /* display: none; */
+  
+}
 #menu-mobile .active .nav-items {
   display: flex;
   flex-direction: column;
@@ -59,6 +85,10 @@ header {
   margin-left: 6%;
   color: #edecff;
 }
+#cards {
+  color: white;
+  border: blueviolet 1px solid;
+}
 
 .headline {
   display: flex;
@@ -76,7 +106,8 @@ header {
   width: 100%;
   position: absolute;
   top: 2%;
-  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom, url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
+  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom,
+    url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
   height: 100vh;
   background-color: #191765;
 }
@@ -121,6 +152,7 @@ a {
   margin-right: 2px;
 }
 
+
 #menu-mobile .active .nav-items li {
   padding: 6%;
   display: inline-flex;
@@ -157,6 +189,7 @@ a {
 p {
   margin: 2%;
   color: #f5f5ff;
+  width: 60%;
 }
 
 footer p {
@@ -177,6 +210,7 @@ footer p {
   text-align: center;
   font-weight: 400;
   padding: 2px;
+  width: 72%;
   font-size: 20px;
 }
 
@@ -202,8 +236,7 @@ footer p {
 .welcome-section {
   margin-top: 45px;
   width: 100%;
-  background:
-    url(./assets/Ellipse-18.svg) top left no-repeat,
+  background: url(./assets/Ellipse-18.svg) top left no-repeat,
     url(./assets/Ellipse-19.svg) right center no-repeat;
 }
 
@@ -255,17 +288,6 @@ hr {
   grid-template-columns: 100vw;
 }
 
-.project-item {
-  margin: 64px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: aqua solid 2px;
-  width: 100vw;
-  align-items: center;
-  align-content: space-around;
-}
-
 .one {
   background: no-repeat url("./assets/Ellipse\ 19@2x.svg") left top;
 }
@@ -308,7 +330,7 @@ hr {
 
 .btn-container .liveBtn {
   width: 48%;
-  margin: auto;
+  margin: 10px;
 }
 
 .btn-container .liveSourceBtn {
@@ -325,7 +347,7 @@ hr {
 .btn-container {
   display: none;
 }
-.project-description h2{
+.project-description h2 {
   margin: auto;
 }
 
@@ -334,7 +356,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 65%;
+  width: 60%;
   height: 18%;
   padding: 2%;
 }
@@ -367,13 +389,13 @@ hr {
   flex-direction: column;
   align-items: center;
   margin-top: 14px;
-  /* border: solid aqua 2px; */
   width: 333px;
 }
 
 .project-img {
   width: 327px;
   height: 206px;
+  align-self: center;
   background-color: #fff;
 }
 
@@ -386,11 +408,14 @@ hr {
   font-size: 32px;
   color: #fff;
 }
-.description-container{
-  display: flex;
-flex-direction: column;
-align-items: center;
+.description-container {
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ justify-content: space-evenly;
+ grid-template-columns: auto;
 }
+
 
 .description {
   width: 327px;
@@ -401,6 +426,10 @@ align-items: center;
   color: #dcdce8;
   font-size: 20px;
 }
+.description-container p{
+  width:340px;
+  margin: auto;
+}
 
 .contact-form .description h2 {
   font-size: 34px;
@@ -409,9 +438,20 @@ align-items: center;
   color: #9390ff;
   letter-spacing: 1px;
 }
+.description-container h2 {
+  margin: auto 132px;
+  padding: 2%;
+  width: max-content;
+  align-self: center;
+  margin-right: 204px;
+}
+.description-container button{
+  align-self: center;
+}
 
 .description p {
   font-weight: 400;
+  width: 96%;
   font-style: normal;
 }
 
@@ -503,8 +543,10 @@ form button:hover {
   font-weight: 400;
   color: #fff;
   height: 40px;
-  margin: 23px;
-  width: 100%;
+  
+  margin: 12px auto;
+
+  width: fit-content;
   list-style: none;
 }
 
@@ -617,25 +659,10 @@ footer .social-media {
     justify-content: center;
   }
 
-.project-img {
-    width: 84%;
-    height: 647px;
-  }
-
   .active .description {
     width: 700px;
     position: relative;
     right: 154px;
-  }
-
-  #cards {
-    /* border: #9390ff solid; */
-    /* display: grid; */
-    /* grid-template-columns: 100vw; */
-    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-
-    /* margin: 20px; */
-    /* width: 100vw; */
   }
 
   .active .description h2 {
@@ -687,6 +714,13 @@ footer .social-media {
     font-size: 44px;
   }
 
+  .description-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    flex-direction: row;
+    margin: auto 10%;
+    width: 100%;
+  }
   .headline h2 {
     text-align: center;
     margin-top: -48px;
@@ -699,13 +733,6 @@ footer .social-media {
     margin-bottom: 10px;
     color: #646369;
   }
-
-  .project-item {
-    border: #dcdce8 solid 2px;
-    
-    width: 10px;
-  }
-
 
   #cards hr {
     margin-left: 148px;
@@ -823,58 +850,46 @@ footer .social-media {
   }
 
   .project-item {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    /* height: 500px; */
-    margin: 0 14px;
-    border:  solid springgreen;
+    margin: 0 auto;
   }
-  .project-img{
-    width: 10px;
-  }
-.project-description{
-  display: flex;
-  flex-direction: row;
-  border:  solid springgreen;
-}
-  .reverse-item {
+
+  .reverse {
     flex-direction: row-reverse;
   }
 
   .project-img {
-    width: 678px;
-    height: 448px;
-    margin: 0 auto;
+    width: auto;
+    height: auto;
+    margin: auto 12px;
     background-color: #fff;
   }
 
+  
+
   .project-description {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
     width: 450px;
-    margin-left: 2%;
-    height: 88%;
-  }
-
-  .description h2 {
-    width: 430px;
-    text-align: start;
   }
 
   .project-item h2 {
     font-weight: 400;
     padding-bottom: 50px;
     font-size: 32px;
-    margin: -4px;
+    margin-top: 58px;
+    align-self: flex-start;
+    margin-left: 250px;
   }
 
   .languages {
-    margin-left: -32px;
+    margin-left: -64px;
     font-size: 15px;
-    width: 85%;
+    /* width: 77%; */
   }
 
   #nav-desktop {
