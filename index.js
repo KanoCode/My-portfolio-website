@@ -16,3 +16,16 @@ mobileNav.addEventListener('click', ()=>{
     mobileNav.classList.add('active');
   } 
 })
+
+// form validation 
+const submitBtn = document.getElementById("submitBtn"); 
+
+function validator(e) { 
+  const formValue = document.getElementById("email").value; 
+  if (formValue === formValue.toLowerCase()) { 
+    console.log(formValue,e); 
+  } else { 
+    e.preventDefault(); 
+  } } 
+  
+submitBtn.addEventListener("click", validator); 
