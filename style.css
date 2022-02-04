@@ -76,7 +76,8 @@ header {
   width: 100%;
   position: absolute;
   top: 2%;
-  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom,
+  background:
+    url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom,
     url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
   height: 100vh;
   background-color: #191765;
@@ -212,7 +213,8 @@ footer p {
 .welcome-section {
   margin-top: 45px;
   width: 100%;
-  background: url(./assets/Ellipse-18.svg) top left no-repeat,
+  background:
+    url(./assets/Ellipse-18.svg) top left no-repeat,
     url(./assets/Ellipse-19.svg) right center no-repeat;
 }
 
