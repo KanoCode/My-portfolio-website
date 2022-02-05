@@ -10,6 +10,10 @@ html {
   height: 100vh;
 }
 
+.popup-bg p {
+  width: 72%;
+  margin: 2px auto;
+}
 body {
   background: #191765;
   display: flex;
@@ -192,9 +196,9 @@ a {
 }
 
 p {
-  margin: 2%;
   color: #f5f5ff;
   width: 60%;
+  width: 279px;
 }
 
 footer p {
@@ -505,6 +509,7 @@ button:hover {
 .head > img {
   width: 279px;
   margin: auto;
+  margin: auto 30%;
 }
 .head > div {
   width: 73%;
