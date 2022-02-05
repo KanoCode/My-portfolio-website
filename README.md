@@ -11,10 +11,6 @@
 ## Built-With
 -HTML and CSS
 
-## Live Demo
-
-[See a Live Demo Here](https://kanocode.github.io/my-portfolio-website/)
-
 ## Authors
 
 👤 **Author1**
