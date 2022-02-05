@@ -28,20 +28,25 @@ header {
   display: none;
   z-index: 41;
 }
-#cards .active{
-position: fixed;
-top: 0;
+#cards .active {
+  position: fixed;
+  top: 0;
   width: 86vw;
   left: 6%;
   margin: 0 auto;
-  background-color:#383867;
-
+  background-color: #383867;
+}
+#cards .active .fas {
+  display: block;
+}
+#cards .active .seeProject {
+  display: none;
 }
 
 #cards .fas {
   display: block;
   position: absolute;
-  top:0;
+  top: 0;
   right: 6px;
   cursor: pointer;
   display: none;
@@ -49,12 +54,11 @@ top: 0;
   font-size: 28px;
   z-index: 100;
 }
-.active-card{
+.active-card {
   display: none;
 }
-#cards .fas{ 
+#cards .fas {
   /* display: none; */
-  
 }
 #menu-mobile .active .nav-items {
   display: flex;
@@ -138,7 +142,13 @@ a {
 .social-media li {
   list-style-type: none;
 }
-
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+  width: 333px;
+}
 .box li {
   list-style-type: none;
   padding: 10px;
@@ -152,7 +162,6 @@ a {
   padding: 6px 20px;
   margin-right: 2px;
 }
-
 
 #menu-mobile .active .nav-items li {
   padding: 6%;
@@ -309,34 +318,32 @@ hr {
   margin-top: 90px;
 }
 
-#cards .active .project-item {
+#cards .active {
+  width: 80vw;
   position: fixed;
-  top: 0;
-  left: 3.6%;
-  background: #373665;
-  width: 92%;
   height: 100vh;
-  margin: 0 auto;
+  gap: 3px;
+  justify-content: space-evenly;
+  top: 0;
+  left: 10%;
+  background-color: #383868;
 }
 
-#cards .active .project-item .seeProject {
-  display: none;
+#cards .head {
+  display: flex;
+  flex-direction: column;
+}
+.head > div {
+  display: flex;
 }
 
-.btn-container button {
-  width: 49%;
-  font-size: 24px;
-  margin: 10px 16%;
+.intro {
+  display: flex;
+  flex-direction: column;
 }
 
-.btn-container .liveBtn {
-  width: 48%;
-  margin: 10px;
-}
-
-.btn-container .liveSourceBtn {
-  width: 64%;
-  margin: auto;
+#cards .project-img {
+  border: #9390ff;
 }
 
 .project-description .description .fas {
@@ -345,26 +352,12 @@ hr {
   left: 85%;
 }
 
-.btn-container {
-  display: none;
-}
 .project-description h2 {
   margin: auto;
 }
 
-.active .btn-container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 60%;
-  height: 18%;
-  padding: 2%;
-}
-
 .btn-container span {
   font-size: 16.44px;
-  margin: auto;
 }
 
 .active .project-description {
@@ -380,17 +373,17 @@ hr {
   position: absolute;
   top: 0;
 }
+#cards .description > div {
+  width: 100vw;
+}
+#cards .active p {
+  margin: 14px auto;
+  width: 50%;
+}
 
 .active .project-img {
   margin-top: 65px;
-}
-
-.project-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 14px;
-  width: 333px;
+  margin: 11px auto;
 }
 
 .project-img {
@@ -409,15 +402,18 @@ hr {
   font-size: 32px;
   color: #fff;
 }
-.description-container {
- display: flex;
- position: relative;
- flex-direction: column;
- justify-content: space-evenly;
- grid-template-columns: auto;
- z-index: 0;
+.liveBtn {
+  background-color: #191765;
+  display: block;
+  margin: 10px auto;
+  width: 108px;
 }
-
+.liveSourceBtn {
+  background-color: #191765;
+  display: block;
+  margin: 10px auto;
+  width: 124px;
+}
 
 .description {
   width: 327px;
@@ -428,8 +424,8 @@ hr {
   color: #dcdce8;
   font-size: 20px;
 }
-.description-container p{
-  width:340px;
+.description-container p {
+  width: 340px;
   margin: auto;
 }
 
@@ -447,13 +443,13 @@ hr {
   align-self: center;
   margin-right: 204px;
 }
-.description-container button{
+.description-container button {
   align-self: center;
 }
 
 .description p {
   font-weight: 400;
-  width: 96%;
+  width: 36%;
   font-style: normal;
 }
 
@@ -511,7 +507,20 @@ button:hover {
   font-weight: 400;
   font-size: 12px;
 }
+.head > img {
+  width: 279px;
+  margin: auto;
+}
+.head > div {
+  width: 73%;
+  margin: 10px auto;
+}
 
+.btn-container {
+  width: 100%;
+  display: block;
+  margin: 2px auto;
+}
 button:enabled {
   background: #7d73fc;
 }
@@ -545,7 +554,7 @@ form button:hover {
   font-weight: 400;
   color: #fff;
   height: 40px;
-  
+
   margin: 12px auto;
 
   width: fit-content;
@@ -654,7 +663,17 @@ footer .social-media {
     width: 668px;
     height: 80vh;
   }
-
+  #cards .active {
+    width: 80vw;
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 10%;
+    background-color: #383868;
+  }
   .active .project-item {
     display: flex;
     flex-direction: column;
@@ -672,6 +691,26 @@ footer .social-media {
     top: 0;
     left: 213px;
   }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: -44px;
+
+    width: 50%;
+    margin: 2px 30%;
+  }
+  .btn-container > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 42px;
+  }
+  .liveBtn {
+    width: 108px;
+  }
+  .liveSourceBtn {
+    width: 124px;
+  }
 
   .description .fas {
     display: none;
@@ -686,19 +725,23 @@ footer .social-media {
     margin-top: -82px;
   }
 
-  .btn-container {
-    flex-direction: row;
-    margin-top: -60px;
-    margin-bottom: 58px;
-    width: 48%;
+  .head > img {
+    width: 52%;
+    display: block;
+    margin: 32px auto;
+  }
+  .intro > p {
+    width: 50%;
+  }
+  .intro > button {
+    margin: auto;
   }
 
-  .btn-container .liveBtn {
-    margin: 50px;
+  .intro > ul {
+    margin: 16px auto;
   }
-
-  .btn-container .liveSourceBtn {
-    margin: 50px;
+  .head {
+    width: 90%;
   }
 
   .logo {
@@ -881,8 +924,6 @@ footer .social-media {
     background-color: #fff;
   }
 
-  
-
   .project-description {
     display: flex;
     justify-content: space-between;
@@ -902,9 +943,8 @@ footer .social-media {
   }
 
   .details {
-    
     padding-top: 60px;
-      margin-top: 66px;
+    margin-top: 66px;
   }
 
   .languages {
