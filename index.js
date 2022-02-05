@@ -1,34 +1,32 @@
-const menuBtnIcon = document.querySelector('i');
+const menuBtnIcon = document.querySelector("i");
 const menuBtnClass = menuBtnIcon.classList[1];
-const mobileNav = document.querySelector('.navMenu');
+const mobileNav = document.querySelector(".navMenu");
 
 function switchIcons() {
-    if (menuBtnClass == 'fa-bars') {
-    menuBtnIcon.classList.toggle('fa-times');
-  } 
+  if (menuBtnClass == "fa-bars") {
+    menuBtnIcon.classList.toggle("fa-times");
   }
+}
 
-mobileNav.addEventListener('click', ()=>{
+mobileNav.addEventListener("click", () => {
   switchIcons();
-  if(mobileNav.classList.contains('active')){
-    mobileNav.classList.remove('active');
-  }else{
-    mobileNav.classList.add('active');
-  } 
-})
+  if (mobileNav.classList.contains("active")) {
+    mobileNav.classList.remove("active");
+  } else {
+    mobileNav.classList.add("active");
+  }
+});
 
-const names = document.getElementById('name').value;
-const email = document.getElementById('mail').value;
-const mess = document.getElementById('message').value;
-const btn = document.getElementById('submitBtn').value;
+//form validation
 
-const User = {
-  'name' : names,
-  'mail' : email,
-  'message' : mess
+const submitBtn = document.getElementById("submitBtn");
+const errorMessage = document.getElementById("errorMessage");
+function validator(e) {
+  const formValue = document.getElementById("email").value;
+  if ((formValue == formValue.toLowerCase()) == false) {
+    e.preventDefault();
+    errorMessage.innerHTML = `<i class="fas fa-exclamation-triangle"></i><strong>Invalid email !!</strong> Please insert an email without uppercase letters and try again`;
+  }
 }
 
-btn.addEventListener('click', processData);
-function processData (){
-}
-
+submitBtn.addEventListener("click", validator);

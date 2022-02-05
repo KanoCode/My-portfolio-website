@@ -76,7 +76,9 @@ header {
   width: 100%;
   position: absolute;
   top: 2%;
-  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom, url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
+  background:
+    url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom,
+    url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
   height: 100vh;
   background-color: #191765;
 }
@@ -197,6 +199,15 @@ footer p {
   left: 90%;
   top: 2%;
   height: 5%;
+}
+
+#errorMessage {
+  color: #dc1515cf;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 12px;
+  margin: 5px;
+  width: 96%;
 }
 
 .welcome-section {
@@ -481,9 +492,17 @@ form {
 
 form input {
   height: 50px;
-  margin: 8px auto;
+  margin: 15px auto;
   width: 93%;
   padding: 15px 16px;
+}
+
+.error {
+  color: firebrick;
+}
+
+form i {
+  color: #ffef4a;
 }
 
 textarea {
