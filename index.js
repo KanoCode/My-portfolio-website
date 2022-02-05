@@ -2,7 +2,6 @@ const menuBtnIcon = document.querySelector("i");
 const menuBtnClass = menuBtnIcon.classList[1];
 const mobileNav = document.querySelector(".navMenu");
 
-
 function switchIcons() {
   if (menuBtnClass == "fa-bars") {
     menuBtnIcon.classList.toggle("fa-times");
@@ -19,70 +18,65 @@ mobileNav.addEventListener("click", () => {
 });
 
 /*Projects Section*/
-const popup = document.querySelector('.popup-bg')
 
 //Array of objects for section content
 
 const cardsObjects = [
-  
   {
-  postTitle: "Multi Post Stories",
-  description:
-    "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
-  popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
-  technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
-  languages: ["html", "css", "javaScript", "bootstrap"],
-  linkLive: "https://butlermuwo.github.io/Portfolio/",
-  linkSource: "https://butlermuwo.github.io/Portfolio/",
-  position: "one",
-},
+    postTitle: "Multi Post Stories",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
+    popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
+    technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
+    languages: ["html", "css", "javaScript", "bootstrap"],
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "https://butlermuwo.github.io/Portfolio/",
+    position: "one",
+  },
   {
-  postTitle: "Multi Post Stories",
-  description:
-    "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
-  popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
-  technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
-  languages: ["html", "css", "javaScript", "bootstrap"],
-  linkLive: "https://butlermuwo.github.io/Portfolio/",
-  linkSource: "https://butlermuwo.github.io/Portfolio/",
-  position: "one",
-},
+    postTitle: "Multi Post Stories",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
+    popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
+    technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
+    languages: ["html", "css", "javaScript", "bootstrap"],
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "https://butlermuwo.github.io/Portfolio/",
+    position: "one",
+  },
   {
-  postTitle: "Multi Post Stories",
-  description:
-    "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
-  popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
-  technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
-  languages: ["html", "css", "javaScript", "bootstrap"],
-  linkLive: "https://butlermuwo.github.io/Portfolio/",
-  linkSource: "https://butlermuwo.github.io/Portfolio/",
-  position: "one",
-},
+    postTitle: "Multi Post Stories",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
+    popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
+    technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
+    languages: ["html", "css", "javaScript", "bootstrap"],
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "https://butlermuwo.github.io/Portfolio/",
+    position: "one",
+  },
   {
-  postTitle: "Multi Post Stories",
-  description:
-    "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-  popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
-  popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
-  technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
-  languages: ["html", "css", "javaScript", "bootstrap"],
-  linkLive: "https://butlermuwo.github.io/Portfolio/",
-  linkSource: "https://butlermuwo.github.io/Portfolio/",
-  position: "one",
-},
-
+    postTitle: "Multi Post Stories",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    popupImageUrlMobile: "./assets/SnapshootPortfolioMobi.png",
+    popupImageUrlDesktop: "./assets/Snapshoot-portfolio-desktop.png",
+    technologiesPopup: ["html", "css", "Ruby on rails", "Github"],
+    languages: ["html", "css", "javaScript", "bootstrap"],
+    linkLive: "https://butlermuwo.github.io/Portfolio/",
+    linkSource: "https://butlermuwo.github.io/Portfolio/",
+    position: "one",
+  },
 ];
 
+// popup data
 
-// popup data 
+let template = document.createElement("template");
 
-
-  let template = document.createElement('template')
-
-  template.innerHTML = `
+template.innerHTML = `
   <div class="popup-bg">
           <div class="popup-data">
         <i class="fas fa-times toggle-active close"></i>
@@ -124,19 +118,17 @@ const cardsObjects = [
       </div>
       </div>
   
-  `
-  document.body.appendChild(template.content)
+  `;
+document.body.appendChild(template.content);
+// const popup = document.querySelector(".popup-bg");
+const ul = document.getElementById("cards");
 
-
-
-const ul = document.getElementById('cards')
-
-cardsObjects.forEach(card => {
-  let template = document.createElement('template')
-let tec = ''
-card.languages.forEach(li => {
-  tec.innerHTML = `<li>${li}</li>`
-})
+cardsObjects.forEach((card) => {
+  let template = document.createElement("template");
+  let tec = "";
+  card.languages.forEach((li) => {
+    tec.innerHTML = `<li>${li}</li>`;
+  });
   template.innerHTML = `
   <li class="card-container one">
           <div class="project-item">
@@ -161,35 +153,23 @@ card.languages.forEach(li => {
           </div>
         </li>
   
-  `
-  ul.appendChild(template.content)
-})
+  `;
+  ul.appendChild(template.content);
+});
 
-const seeProjectBtns = document.querySelectorAll('.cardBtns')
+const seeProjectBtns = document.querySelectorAll(".cardBtns");
 
+seeProjectBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    popup.classList.add("d-flex");
+  });
+});
 
-seeProjectBtns.forEach(btn => {
-  btn.addEventListener('click', ()=>{
-    const popup = document.querySelector('.popup-bg')
-    // console.log(popup);
-    popup.classList.add('d-flex')
-  })
-})
-
-
-
-
-const closeBtn = document.querySelector('.close')
-closeBtn.addEventListener("click",() => {
-  const popup = document.querySelector('popup-bg')
-  // popup.classList.remove('d-flex')
-  popup.classList.remove('d-flex')
-  
-} );
-
-
-
-
+const closeBtn = document.querySelector(".close");
+const popup = document.querySelector(".popup-bg");
+closeBtn.addEventListener("click", () => {
+  popup.classList.remove("d-flex");
+});
 
 // seeProjectBtns.forEach(btn => {
 // btn.addEventListener('click', () => {
@@ -197,7 +177,6 @@ closeBtn.addEventListener("click",() => {
 // popup.classList.add('d-flex')
 // })
 // })
-
 
 // const cardSection = document.querySelector("#cards");
 
@@ -246,7 +225,6 @@ closeBtn.addEventListener("click",() => {
 
 // //close popup
 
-
 // //open popup
 // cardsBtn.addEventListener("click", () => {
 //   activeCard.classList.add("active");
@@ -256,8 +234,6 @@ closeBtn.addEventListener("click",() => {
 // });
 
 // //toggle active cardsOff
-
-
 
 // function createContentPopUp(
 //   {
@@ -277,9 +253,9 @@ closeBtn.addEventListener("click",() => {
 
 //   const cardContent = `
 
-//   <h2>${postTitle}</h2>  
+//   <h2>${postTitle}</h2>
 //   <div class="project-img"><img src= '${popupImageUrlDesktop}'></div>
-  
+
 //   <p>
 //   ${description}
 //   </p>
@@ -312,6 +288,3 @@ closeBtn.addEventListener("click",() => {
 //   });
 // }
 // generateMoreCards(positions);
-
-
-
