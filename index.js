@@ -30,3 +30,35 @@ function validator(e) {
 }
 
 submitBtn.addEventListener("click", validator);
+
+//local storage
+
+// email validation
+const formEmail = document.querySelector("form");
+// const userEmailerror = document.querySelector('.errorEmail');
+// const userEmail = document.querySelector('.useremail');
+
+// formEmail.addEventListener('submit', (e) => {
+//   const userInput = userEmail.value;
+//   if (/[A-Z]/.test(userInput)) {
+//     userEmailerror.innerHTML = 'ERROR! Please use lowercase for email address';
+//     userEmailerror.classList.add('.errorEmail');
+//     e.preventDefault();
+//   }
+// });
+
+formEmail.addEventListener("input", () => {
+  const formStorageData = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#message").value,
+  };
+  localStorage.setItem("form", JSON.stringify(formStorageData));
+});
+
+const formObject = JSON.parse(localStorage.getItem("form"));
+document.querySelector("#name").value = formObject.name;
+document.querySelector("#email").value = formObject.email;
+document.querySelector("#message").value = formObject.message;
+
+console.log(formObject);
