@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
+=======
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RZ55E1ZLQH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RZ55E1ZLQH");
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+>>>>>>> main
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,223 +70,276 @@
   </head>
 
   <body>
-    <header class="nav">
-      <a class="logo" href="#">Nicholas</a>
-      <nav class="nav-buttons">
-        <ul class="nav-li">
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Contact">Contact</a></li>
-          <li><a href="#About">About</a></li>
-          <li>
-            <i class="far fa-envelope"></i>
-          </li>
-        </ul>
-      </nav>
-      <nav class="side-bar">
-        <ul class="nav-li">
-          <li class="entity">
-            <a href="#Portfolio"
-              >Portfolio<img
-                src="bgimages/chevron.png"
-                class="chevron"
-                alt="chevron"
-            /></a>
-          </li>
-          <li class="entity">
-            <a href="#Contact"
-              >Contact<img
-                src="bgimages/chevron.png"
-                class="chevron"
-                alt="chevron"
-            /></a>
-          </li>
-          <li class="entity">
-            <a href="#About"
-              >About<img
-                src="bgimages/chevron.png"
-                class="chevron"
-                alt="chevron"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="menuDropDown">
-        <i class="fas fa-bars bars"></i>
+    <header>
+      <div id="menu-mobile">
+        <a href="#" id="logo">John Doe</a>
+        <nav class="navMenu">
+          <div class="menuBtn"><i class="fas fa-bars"></i></div>
+          <ul class="nav-items">
+            <li>
+              <a href="#cards">Portfolio <span class="nav-deco"></span></a>
+              <i class="fas fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#about">About</a><span></span
+              ><i class="fas fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#contact">Contact </a><span></span
+              ><i class="fas fa-angle-right"></i>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="menu-cross"><i class="fas fa-times hidecross"></i></div>
+
+      <div id="nav-desktop">
+        <a href="#" class="logo">John Doe</a>
+
+        <ul class="nav-items">
+          <li>
+            <h5>Portfolio <span class="nav-deco"></span></h5>
+          </li>
+          <li>
+            <h5>About</h5>
+            <span></span>
+          </li>
+          <li>
+            <h5>Contact</h5>
+            <span></span>
+          </li>
+          <li>
+            <img class="email-icon" src="./assets/Icon-Mail.svg" alt="" />
+          </li>
+        </ul>
+      </div>
     </header>
-    <section class="headers" id="About">
-      <h1>Kanombola Kanombola</h1>
-      <h2>Software Developer</h2>
-      <p>
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hestiate to contact me.
-      </p>
-      <hr class="line" />
-      <div class="software">
-        <ul>
-          <li class="blue1">Language</li>
-          <li class="common-li">Javascript</li>
-          <li class="common-li">Ruby</li>
-          <li class="common-li">Html</li>
-          <li class="common-li">Css</li>
-        </ul>
-        <ul>
-          <li class="blue1">Frameworks</li>
-          <li class="common-li">Bootstrap</li>
-          <li class="common-li">Ruby on Rails</li>
-          <li class="common-li">RSPec</li>
-          <li class="common-li">CapyBara</li>
-          <li class="common-li">Selenium</li>
-        </ul>
-        <ul>
-          <li class="blue1">Skills</li>
-          <li class="common-li">Codekit</li>
-          <li class="common-li">Github</li>
-          <li class="common-li">Codepen</li>
-          <li class="common-li">Gitlab</li>
-          <li class="common-li">Terminal</li>
-        </ul>
-      </div>
-      <hr class="line" />
-      <div class="arrow-icons">
-        <div class="arrow1">&#8595; Work</div>
-        <ul class="icons">
-          <li>
-            <img src="icons/gitHub.png" alt="github icon" />
-          </li>
-          <li>
-            <img src="icons/linkedin.png" alt="linkedin icon" />
-          </li>
-          <li>
-            <img src="icons/angelist.png" alt="angelist icon" />
-          </li>
-          <li>
-            <img src="icons/twitter.png" alt="twitter icon" />
-          </li>
-          <li>
-            <img src="icons/medium.png" alt="medium icon" />
-          </li>
-        </ul>
-        <div class="arrow1 arrow-m">&#8595; Work</div>
-      </div>
-    </section>
-    <section class="header" id="Portfolio">
-      <h2 class="recent">MY RECENT WORK</h2>
-      <h2 class="recent1">My recent work</h2>
-      <hr class="line1" />
-      <ul class="lang-sec"></ul>
-
-      <!-- POPUP DATA -->
-      <div class="pop-up--overlay" id="hidden">
-        <div class="pop-up-box">
-          <div class="pop-up-header">
-            <div>
-              <h2 class="projectTitle">Multi-post story</h2>
-            </div>
-            <div class="close-btn">&times;</div>
+    <main>
+      <section id="about" class="welcome-section">
+        <div class="Circle-1"></div>
+        <div class="Circle-2"></div>
+        <div class="headline">
+          <h1>Kanombola Kano</h1>
+          <h2>Software Developer</h2>
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <hr />
+        <section class="skills-container">
+          <ul class="box">
+            <li class="titled-ld">languages</li>
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>html</li>
+            <li>CSS</li>
+          </ul>
+          <ul class="box">
+            <li class="titled-ld"><h4>Skills</h4></li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Terminal</li>
+            <li>Gitlab</li>
+          </ul>
+          <ul class="box">
+            <li class="titled-ld">Frameworks</li>
+            <li>Bootstrap</li>
+            <li>Selenium</li>
+            <li>Language</li>
+            <li>Language</li>
+          </ul>
+        </section>
+        <hr />
+        <div class="next-page-nav">
+          <div class="next-page right">
+            <a href="#cards"
+              ><img
+                src="./assets/arrow-svg.svg"
+                alt="Link to next section of page"
+            /></a>
+            <h5>Work</h5>
           </div>
-          <div class="placeholder1">
-            <img
-              class="popImage"
-              src="bgimages/Snapshoot.png"
-              alt="image placeholder"
-            />
-          </div>
-          <div>
-            <p class="popText">
-              Lorem Ipsum is simply dummy text of the printing and
-              typesettingry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s, when an unknown Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scramble.
-            </p>
-          </div>
-          <ul class="plang">
-            <li class="pop-li">html</li>
-            <li class="pop-li">css</li>
-            <li class="pop-li">Ruby on rails</li>
-            <li class="pop-li unique">Github</li>
+          <ul class="social-media">
+            <li>
+              <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fab fa-angellist" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/Icon-Medium.svg" alt="" />
+              </a>
+            </li>
           </ul>
 
-          <ul class="plangmobile">
-            <li class="pop-li">html</li>
-            <li class="pop-li">Ruby on rails</li>
-            <li class="pop-li unique">css</li>
-          </ul>
-          <div class="buttonsPop">
-            <button type="button" class="seeProject1">
-              see project<img
-                src="icons/live.png"
-                alt="live icon"
-                class="liveIcon"
-              />
-            </button>
-            <button type="button" class="seeProject1">
-              see source
-              <img
-                src="icons/smallGitHub.png"
-                alt="github link"
-                class="liveIcon"
-              />
-            </button>
+          <div class="next-page left">
+            <a href="#cards"
+              ><img
+                src="./assets/arrow-svg.svg"
+                alt="Link to next section of page"
+            /></a>
+            <h5>Work</h5>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contactInfo" id="Contact">
-      <div class="contactInfo-text">
-        <h2 class="contact">CONTACT US</h2>
-        <h2 class="contact1">Let’s chat!</h2>
-        <p class="contact-text">
-          &nbsp;&nbsp;If you have an application you are interested in
-          developing, a feature that you need built or a project that needs
-          coding. I’d love to help with it
-        </p>
-      </div>
-      <form
-        id="formdata"
-        action="https://formspree.io/f/xeqnejgd"
-        method="POST"
-        class="conct-form"
-      >
-        <input
-          type="text"
-          class="height width mobilename"
-          name="Fullname"
-          placeholder="Full name"
-          maxlength="30"
-          required
-          id="#username"
-        />
-        <br />
-        <input
-          type="email"
-          class="useremail width height mobileemail"
-          name="email"
-          placeholder="Email address"
-          maxlength="30"
-          required
-        />
-        <br />
-        <textarea
-          id="messageForm"
-          name="message"
-          class="usermessage width"
-          placeholder="Write your message here"
-          maxlength="500"
-          rows="5"
-          required
-        ></textarea>
-        <div class="errorEmail"></div>
-        <button class="buttonForm" type="submit">Send</button>
-      </form>
-    </section>
-    <hr class="line1" />
-    <div class="bottom-icons">
-      <ul class="icons">
+      </section>
+      <section id="cards">
+        <h3>MY RECENT WORK</h3>
+        <hr />
+        <div class="work">
+          <div class="card-container one">
+            <div class="project-item">
+              <div class="project-img"></div>
+              <div class="project-description">
+                <div class="description">
+                  <h2>Multi-Post Stories</h2>
+                  <p>
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a standard dummy text.
+                  </p>
+                </div>
+                <ul class="languages">
+                  <li>css</li>
+                  <li>bootstrap</li>
+                  <li>html</li>
+                  <li>ruby</li>
+                </ul>
+                <button type="button">See Project</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-container two">
+            <div class="project-item reverse-item">
+              <div class="project-img"></div>
+              <div class="project-description">
+                <div class="description">
+                  <h2>Multi-Post Stories</h2>
+                  <p>
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a standard dummy text.
+                  </p>
+                </div>
+                <ul class="languages">
+                  <li>css</li>
+                  <li>bootstrap</li>
+                  <li>html</li>
+                  <li>ruby</li>
+                </ul>
+                <button type="button">See Project</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-container three">
+            <div class="project-item">
+              <div class="project-img"></div>
+              <div class="project-description">
+                <div class="description">
+                  <h2>Multi-Post Stories</h2>
+                  <p>
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a standard dummy text.
+                  </p>
+                </div>
+                <ul class="languages">
+                  <li>css</li>
+                  <li>bootstrap</li>
+                  <li>html</li>
+                  <li>ruby</li>
+                </ul>
+                <button type="button">See Project</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-container four">
+            <div class="project-item reverse-item">
+              <div class="project-img"></div>
+              <div class="project-description">
+                <div class="description">
+                  <h2>Multi-Post Stories</h2>
+                  <p>
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a standard dummy text.
+                  </p>
+                </div>
+                <ul class="languages">
+                  <li>css</li>
+                  <li>bootstrap</li>
+                  <li>html</li>
+                  <li>ruby</li>
+                </ul>
+                <button type="button">See Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-form">
+        <div class="description">
+          <h2>Let's Chat</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+        <form
+          class="contact-me"
+          action="https://formspree.io/f/mzbodazz"
+          method="post"
+        >
+          <label for="name"></label>
+          <input
+            required
+            type="text"
+            placeholder="Your name"
+            name="name"
+            id="name"
+            maxlength="30"
+          />
+
+          <label for="email"></label>
+          <input
+            required
+            type="email"
+            placeholder="jeremy@gmail.com"
+            name="email"
+            id="email"
+          />
+          <div id="errorMessage"></div>
+          <label for="message"></label>
+          <textarea
+            required
+            name="message"
+            id="message"
+            placeholder="Enter text here"
+            maxlength="500"
+          ></textarea>
+          <div id="contactButton">
+            <button type="submit" id="submitBtn">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <hr class="for-footer" />
+    <footer>
+      <ul class="social-media">
         <li>
           <img src="icons/gitHub.png" alt="github icon" />
         </li>
