@@ -87,9 +87,8 @@ template.innerHTML = `
           <h2>${cardsObjects[0].postTitle}</h2>  <i class="fas fa-times toggle-active close"></i>
               
             </div>
-            <div class="project-img">
             <img src="${cardsObjects[0].popupImageUrlMobile}">
-            </div>
+  
           </div>
   
           <div class="intro">
@@ -125,20 +124,10 @@ const ul = document.getElementById("cards");
 cardsObjects.forEach((card, i) => {
   let template = document.createElement("template");
   let tec = " ";
-  const submitBtn = document.getElementById("submitBtn");
-const errorMessage = document.getElementById("errorMessage");
-function validator(e) {
-  const formValue = document.getElementById("email").value;
-  if ((formValue == formValue.toLowerCase()) == false) {
-    e.preventDefault();
-    errorMessage.innerHTML = `<i class="fas fa-exclamation-triangle"></i><strong>Invalid email !!</strong> Please insert an email without uppercase letters and try again`;
-  }
-}
 
   card.languages.forEach((li) => {
     tec.innerHTML = `<li>${li}</li>`;
   });
-  console.log('this',tec)
   template.innerHTML = `
   <li class="card-container ${i % 2 == 0 ? "two" : "one"}">
           <div class="project-item">
@@ -157,36 +146,26 @@ function validator(e) {
                  ${tec}
                 </ul>
               </div>
-`
-submitBtn.addEventListener("click", validator);
 
-//local storage
-
-// email validation
-const formEmail = document.querySelector("form");
- const userEmailerror = document.querySelector('.errorEmail');
-const userEmail = document.querySelector('.useremail');
-
-formEmail.addEventListener('submit', (e) => {
-  const userInput = userEmail.value;
-  if (/[A-Z]/.test(userInput)) {
-    userEmailerror.innerHTML = 'ERROR! Please use lowercase for email address';
-    userEmailerror.classList.add('.errorEmail');
-    e.preventDefault();
-  }
- });
-
-formEmail.addEventListener("input", () => {
-  const formStorageData = {
-    name: document.querySelector("#name").value,
-    email: document.querySelector("#email").value,
-    message: document.querySelector("#message").value,
-  };
-  localStorage.setItem("form", JSON.stringify(formStorageData));
+              <button class="seeProject cardBtns" type="button">See Project</button>
+            </div>
+          </div>
+        </li>
+  
+  `;
+  ul.appendChild(template.content);
 });
 
-const formObject = JSON.parse(localStorage.getItem("form"));
-document.querySelector("#name").value = formObject.name;
-document.querySelector("#email").value = formObject.email;
-document.querySelector("#message").value = formObject.message;
+const seeProjectBtns = document.querySelectorAll(".cardBtns");
 
+seeProjectBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    popup.classList.add("d-flex");
+  });
+});
+
+const closeBtn = document.querySelector(".close");
+const popup = document.querySelector(".popup-bg");
+closeBtn.addEventListener("click", () => {
+  popup.classList.remove("d-flex");
+});

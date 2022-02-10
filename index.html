@@ -32,40 +32,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-C5WP7ECVR6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-C5WP7ECVR6");
-    </script>
-    <script
-      src="https://kit.fontawesome.com/6dc26eb6e2.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Nicholas Mutale's Portfolio</title>
+    <title>portfolio</title>
   </head>
-
   <body>
     <header>
       <div id="menu-mobile">
@@ -120,7 +88,7 @@
           <p>
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hesiate to contact me.
+            project you need coded, don’t hestiate to contact me.
           </p>
         </div>
         <hr />
@@ -188,10 +156,13 @@
             <h5>Work</h5>
           </div>
         </div>
+
+        <h3>MY RECENT WORK</h3>
+        <hr />
       </section>
 
-      <section>
-        <div class="popup-bg">
+      <section id="cards">
+        <!-- <div class="popup-bg">
           <div class="popup-data">
         <i class="fas fa-times toggle-active"></i>
         <div class="active activeCard">
@@ -200,77 +171,68 @@
            
               
             </div>
+   
+  
           </div>
-          <div class="card-container two">
-            <div class="project-item reverse-item">
-              <div class="project-img"></div>
-              <div class="project-description">
-                <div class="description">
-                  <h2>Multi-Post Stories</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a standard dummy text.
-                  </p>
-                </div>
-                <ul class="languages">
-                  <li>css</li>
-                  <li>bootstrap</li>
-                  <li>html</li>
-                  <li>ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-container three">
-            <div class="project-item">
-              <div class="project-img"></div>
-              <div class="project-description">
-                <div class="description">
-                  <h2>Multi-Post Stories</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a standard dummy text.
-                  </p>
-                </div>
-                <ul class="languages">
-                  <li>css</li>
-                  <li>bootstrap</li>
-                  <li>html</li>
-                  <li>ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-container four">
-            <div class="project-item reverse-item">
-              <div class="project-img"></div>
-              <div class="project-description">
-                <div class="description">
-                  <h2>Multi-Post Stories</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no
-                    accounts or sign-ups required. has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a standard dummy text.
-                  </p>
-                </div>
-                <ul class="languages">
-                  <li>css</li>
-                  <li>bootstrap</li>
-                  <li>html</li>
-                  <li>ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-              </div>
+  
+          <div class="intro">
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="languages">
+              <li>css</li>
+              <li>bootstrap</li>
+              <li>html</li>
+              <li>ruby</li>
+            </ul>
+            <div class="btn-container">
+              <button class=" cardBtn liveBtn">
+                <span>See Live</span>
+                <img src="./assets/Iconic/Icons/Icon.svg" alt="" srcset="" />
+              </button>
+              <button class=" cardBtn liveSourceBtn">
+                <span>See Source</span>
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
         </div>
+      </div>
+      </div> -->
+<ul id="cards">
+
+</ul>
+        <!-- <div class="card-container one">
+          <div class="project-item">
+            <div class="project-img"></div>
+            <div class="project-description">
+              <div class="description">
+                <h2>Multi-Post Stories</h2>
+                <div class="width">
+                  <p>
+                    A daily selection of privately personalized reads; no
+                    accounts or sign-ups required. has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a standard dummy text.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <ul class="languages">
+                  <li>css</li>
+                  <li>bootstrap</li>
+                  <li>html</li>
+                  <li>ruby</li>
+                </ul>
+              </div>
+
+              <button class="seeProject cardBtn" type="button">See Project</button>
+            </div>
+          </div>
+        </div> -->
       </section>
       <section id="contact" class="contact-form">
         <div class="description">
@@ -296,15 +258,14 @@
             maxlength="30"
           />
 
-          <label for="email"></label>
+          <label for="mail"></label>
           <input
             required
             type="email"
             placeholder="jeremy@gmail.com"
             name="email"
-            id="email"
+            id="mail"
           />
-          <div id="errorMessage"></div>
           <label for="message"></label>
           <textarea
             required
@@ -314,7 +275,7 @@
             maxlength="500"
           ></textarea>
           <div id="contactButton">
-            <button type=" submit">Submit</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </section>
@@ -323,24 +284,28 @@
     <footer>
       <ul class="social-media">
         <li>
-          <img src="icons/gitHub.png" alt="github icon" />
+          <a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
         </li>
         <li>
-          <img src="icons/linkedin.png" alt="linkedin icon" />
+          <a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
         </li>
         <li>
-          <img src="icons/angelist.png" alt="angelist icon" />
+          <a href="#"><i class="fab fa-angellist" aria-hidden="true"></i></a>
         </li>
         <li>
-          <img src="icons/twitter.png" alt="twitter icon" />
+          <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
         </li>
         <li>
-          <img src="icons/medium.png" alt="medium icon" />
+          <a href="#"
+            ><img
+              src="./assets/Icon-Medium.svg"
+              alt="icon that links to medium"
+          /></a>
         </li>
       </ul>
-      <div class="mail-to">nicomutale@gmail.com</div>
-    </div>
 
-    <script src="./index.js"></script>
+      <p>emailhere@email.com</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
