@@ -10,6 +10,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+html {
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+>>>>>>> parent of 59df428 (Update styles for popUp)
 body {
   background: #191765;
   display: flex;
@@ -156,6 +164,10 @@ html {
 p {
   margin: 2%;
   color: #f5f5ff;
+<<<<<<< HEAD
+=======
+  width: 60%;
+>>>>>>> parent of 59df428 (Update styles for popUp)
 }
 
 footer p {
@@ -385,6 +397,17 @@ button:hover {
   font-weight: 400;
   font-size: 12px;
 }
+<<<<<<< HEAD
+=======
+.head > img {
+  width: 279px;
+  margin: auto;
+}
+.head > div {
+  width: 73%;
+  margin: 10px auto;
+}
+>>>>>>> parent of 59df428 (Update styles for popUp)
 
 button:enabled {
   background: #7d73fc;
