@@ -10,14 +10,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-<<<<<<< HEAD
-=======
-html {
-  overflow-x: hidden;
-  height: 100vh;
-}
-
->>>>>>> parent of 59df428 (Update styles for popUp)
 body {
   background: #191765;
   display: flex;
@@ -67,6 +59,14 @@ header {
   margin-left: 6%;
   color: #edecff;
 }
+#cards {
+  color: white;
+  border: blueviolet 1px solid;
+}
+
+.project-item {
+  margin: 3% auto;
+}
 
 .headline {
   display: flex;
@@ -84,8 +84,7 @@ header {
   width: 100%;
   position: absolute;
   top: 2%;
-  background:
-    url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom,
+  background: url(./assets/shape\ mobile\ menu-1.svg) no-repeat right bottom,
     url(./assets/shape\ mobile\ menu-2.svg) no-repeat left top;
   height: 100vh;
   background-color: #191765;
@@ -104,7 +103,16 @@ html {
   float: right;
   margin-right: 3%;
 }
-
+.toggle-active {
+  position: fixed;
+  top: 10px;
+  right: 12%;
+}
+.head > h2 {
+  lor: #fff;
+  background: black;
+  margin: 2px auto;
+}
 #menu-mobile .active li .fas {
   color: #acb7c3;
   font-size: 18px;
@@ -113,7 +121,12 @@ html {
 .social-media li {
   list-style-type: none;
 }
-
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+}
 .box li {
   list-style-type: none;
   padding: 10px;
@@ -164,10 +177,6 @@ html {
 p {
   margin: 2%;
   color: #f5f5ff;
-<<<<<<< HEAD
-=======
-  width: 60%;
->>>>>>> parent of 59df428 (Update styles for popUp)
 }
 
 footer p {
@@ -222,8 +231,7 @@ footer p {
 .welcome-section {
   margin-top: 45px;
   width: 100%;
-  background:
-    url(./assets/Ellipse-18.svg) top left no-repeat,
+  background: url(./assets/Ellipse-18.svg) top left no-repeat,
     url(./assets/Ellipse-19.svg) right center no-repeat;
 }
 
@@ -305,7 +313,54 @@ hr {
   margin-top: 90px;
 }
 
-.project-description {
+#cards .active {
+  width: 80vw;
+  position: fixed;
+  height: 100vh;
+  gap: 3px;
+  justify-content: space-evenly;
+  top: 0;
+  left: 10%;
+  background-color: #383868;
+}
+
+#cards .head {
+  display: flex;
+  flex-direction: column;
+}
+.head > div {
+  display: flex;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  height: 346px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#cards .project-img {
+  border: #9390ff;
+  margin: auto;
+}
+
+.project-description .description .fas {
+  position: fixed;
+  top: 6px;
+  left: 85%;
+}
+
+.project-description h2 {
+  margin: auto;
+}
+
+.btn-container span {
+  font-size: 16.44px;
+}
+
+.active .project-description {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -323,9 +378,12 @@ hr {
 .project-item h2 {
   font-weight: 500;
   padding: 20px;
+  margin: 4% auto;
+  text-align: start;
   font-style: normal;
   font-size: 32px;
   color: #fff;
+  width: 100%;
 }
 
 .description {
@@ -348,6 +406,7 @@ hr {
 
 .description p {
   font-weight: 400;
+  width: 60%;
   font-style: normal;
 }
 
@@ -397,17 +456,16 @@ button:hover {
   font-weight: 400;
   font-size: 12px;
 }
-<<<<<<< HEAD
-=======
 .head > img {
   width: 279px;
   margin: auto;
+  margin: auto 30%;
 }
 .head > div {
-  width: 73%;
+  width: 42%;
   margin: 10px auto;
+  color: #edecff;
 }
->>>>>>> parent of 59df428 (Update styles for popUp)
 
 button:enabled {
   background: #7d73fc;
@@ -882,7 +940,7 @@ footer .social-media {
 
 .errorEmail {
   color: red;
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   font-style: normal;
   text-align: center;
   font-weight: 400;
@@ -1184,19 +1242,6 @@ footer .social-media {
   /* .mobile-v {
     display: none;
   } */
-
-  .icons {
-    margin-left: 70px;
-    margin-right: 100px;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    margin-top: 28px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    height: 16px;
-    width: 20px;
-  }
 
   .nav-li {
     display: flex;
