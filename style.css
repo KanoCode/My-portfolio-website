@@ -86,7 +86,6 @@ header {
 }
 #cards {
   color: white;
-  border: blueviolet 1px solid;
 }
 
 .headline {
@@ -146,6 +145,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-top: 14px;
+  margin: auto;
   width: 333px;
 }
 .box li {
@@ -301,15 +301,15 @@ hr {
   background: no-repeat url("./assets/Ellipse\ 19@2x.svg") left top;
 }
 
-.work .two {
+.two {
   background: url("./assets/Ellipse\ 20@2x.svg") no-repeat center right;
 }
 
-.work .three {
+.three {
   background: url("./assets/Ellipse\ 21@2x.svg") no-repeat left center;
 }
 
-.work .four {
+.four {
   background: url("./assets/Ellipse\ 22@2x.svg") no-repeat center right;
 }
 
@@ -339,10 +339,6 @@ hr {
 .intro {
   display: flex;
   flex-direction: column;
-}
-
-#cards .project-img {
-  border: #9390ff;
 }
 
 .project-description .description .fas {
@@ -389,7 +385,12 @@ hr {
   width: 327px;
   height: 206px;
   align-self: center;
+  margin: auto;
   background-color: #fff;
+}
+
+.project-item {
+  margin: 27px;
 }
 
 .project-item h2 {
@@ -863,8 +864,9 @@ footer .social-media {
     margin-bottom: 2%;
   }
 
-  .contact-form .description {
-    height: 268px;
+  .contact-form .description p {
+    width: 100%;
+    margin-top: 30px;
   }
 
   .contact-form h2 {
@@ -937,13 +939,14 @@ footer .social-media {
   }
 
   .reverse {
-    flex-direction: row-reverse;
+    order: -1;
   }
 
   .project-img {
     width: 684px;
     height: 448px;
     background-color: #fff;
+    margin: 16px 4px;
   }
 
   .project-description {
@@ -951,7 +954,8 @@ footer .social-media {
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    width: 450px;
+    width: 400px;
+    margin: 13px 18px;
   }
 
   .project-item h2 {
