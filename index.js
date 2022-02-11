@@ -33,6 +33,7 @@ const cardsObjects = [
     linkLive: "https://butlermuwo.github.io/Portfolio/",
     linkSource: "https://butlermuwo.github.io/Portfolio/",
     position: "one",
+    reverse: "",
   },
   {
     postTitle: "Multi Post Stories",
@@ -44,7 +45,8 @@ const cardsObjects = [
     languages: ["html", "css", "javaScript", "bootstrap"],
     linkLive: "https://butlermuwo.github.io/Portfolio/",
     linkSource: "https://butlermuwo.github.io/Portfolio/",
-    position: "one",
+    position: "two",
+    reverse: "reverse",
   },
   {
     postTitle: "Multi Post Stories",
@@ -56,7 +58,8 @@ const cardsObjects = [
     languages: ["html", "css", "javaScript", "bootstrap"],
     linkLive: "https://butlermuwo.github.io/Portfolio/",
     linkSource: "https://butlermuwo.github.io/Portfolio/",
-    position: "one",
+    position: "three",
+    reverse: "",
   },
   {
     postTitle: "Multi Post Stories",
@@ -68,7 +71,8 @@ const cardsObjects = [
     languages: ["html", "css", "javaScript", "bootstrap"],
     linkLive: "https://butlermuwo.github.io/Portfolio/",
     linkSource: "https://butlermuwo.github.io/Portfolio/",
-    position: "one",
+    position: "four",
+    reverse: "reverse",
   },
 ];
 
@@ -129,10 +133,10 @@ cardsObjects.forEach((card, i) => {
     tec.innerHTML = `<li>${li}</li>`;
   });
   template.innerHTML = `
-  <li class="card-container ${i % 2 == 0 ? "two" : "one"}">
+  <li class="card-container ${card.position}">
           <div class="project-item">
             <div class="project-img"></div>
-            <div class="project-description">
+            <div class="project-description ${card.reverse}">
               <div class="description">
                 <h2>${card.postTitle}</h2>
                 <div class="width">
