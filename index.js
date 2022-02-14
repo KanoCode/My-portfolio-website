@@ -125,12 +125,12 @@ document.body.appendChild(template.content);
 
 const ul = document.getElementById("cards");
 
-cardsObjects.forEach((card, i) => {
+cardsObjects.forEach((card) => {
   let template = document.createElement("template");
   let tec = " ";
 
   card.languages.forEach((li) => {
-    tec.innerHTML = `<li>${li}</li>`;
+    tec += `<li>${li}</li>`;
   });
   template.innerHTML = `
   <li class="card-container ${card.position}">
