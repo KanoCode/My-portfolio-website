@@ -3,7 +3,8 @@
 
 >A website that gives me an opportunity to showcase my work as a developer to the world. This is one of the ways anyone can contact me. 
 
-![image](https://user-images.githubusercontent.com/95347844/148511188-8dbee1d8-df9b-481c-8ca9-a917a020815f.png)
+## screenshot
+![image](assets/3-devices-white.png)
 
 
 
